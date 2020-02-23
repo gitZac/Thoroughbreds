@@ -12,13 +12,13 @@ jQuery(document).ready(function ($) {
 
     }
 
-    athena_slider();
+    thoroughbreds_slider();
 
-    function athena_slider() {
+    function thoroughbreds_slider() {
 
         var height = get_height();
 
-        jQuery('#athena-slider').camera({
+        jQuery('#thoroughbreds-slider').camera({
             height: height + 'px',
             loader: 'bar',
             overlay: false,
@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {
 
-    $('#athena-featured .featured-box').click(function () {
+    $('#thoroughbreds-featured .featured-box').click(function () {
 
         if( $(this).attr('data-target') && $(this).attr('data-target') != '#' ) {
             window.location.href = $(this).attr('data-target');
@@ -46,30 +46,30 @@ jQuery(document).ready(function ($) {
 
     $('.featured-box').hover(function () {
 
-        $('.athena-icon', this).stop(true, false).animate({
+        $('.thoroughbreds-icon', this).stop(true, false).animate({
             top: '-7px'
 
         }, 300);
-        $('.athena-desc', this).stop(true, false).animate({
+        $('.thoroughbreds-desc', this).stop(true, false).animate({
             top: '7px'
 
         }, 300);
 
-        $('.athena-title', this).stop(true, false).animate({
+        $('.thoroughbreds-title', this).stop(true, false).animate({
             'letter-spacing': '1.5px'
 
         }, 300);
 
     }, function () {
-        $('.athena-icon', this).stop(true, false).animate({
+        $('.thoroughbreds-icon', this).stop(true, false).animate({
             top: '0px'
 
         }, 300);
-        $('.athena-desc', this).stop(true, false).animate({
+        $('.thoroughbreds-desc', this).stop(true, false).animate({
             top: '0px'
 
         }, 300);
-        $('.athena-title', this).stop(true, false).animate({
+        $('.thoroughbreds-title', this).stop(true, false).animate({
             'letter-spacing': '1px'
 
         }, 300);
@@ -79,21 +79,21 @@ jQuery(document).ready(function ($) {
 
 
     $('#primary-menu').slicknav({
-        prependTo: $('.athena-header-menu'),
+        prependTo: $('.thoroughbreds-header-menu'),
         label: '',
         allowParentLinks: true
     });
 
-    $('.athena-search, #athena-search .fa.fa-close').click(function () {
+    $('.thoroughbreds-search, #thoroughbreds-search .fa.fa-close').click(function () {
 
-        $('#athena-search').fadeToggle(449)
+        $('#thoroughbreds-search').fadeToggle(449)
 
     });
 
     // Homepage Overlay
-    $('#athena-overlay-trigger .fa').click(function () {
+    $('#thoroughbreds-overlay-trigger .fa').click(function () {
 
-        var selector = $('#athena-overlay-trigger');
+        var selector = $('#thoroughbreds-overlay-trigger');
 
         if (selector.hasClass('open')) {
 
@@ -136,23 +136,23 @@ jQuery(document).ready(function ($) {
 
         if (s > $(window).height()) {
 
-            $('#athena-header.frontpage').addClass('sticky animated slideInDown');
+            $('#thoroughbreds-header.frontpage').addClass('sticky animated slideInDown');
 
         } else {
-            $('#athena-header.frontpage').removeClass('sticky animated slideInDown');
+            $('#thoroughbreds-header.frontpage').removeClass('sticky animated slideInDown');
         }
 
     })
 
     // ------------
-    var athenaWow = new WOW({
+    var thoroughbredsWow = new WOW({
         boxClass: 'reveal',
         animateClass: 'animated',
         offset: 150
 
     });
 
-    athenaWow.init();
+    thoroughbredsWow.init();
     
     
 });

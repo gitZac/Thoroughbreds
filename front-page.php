@@ -3,7 +3,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Athena
+ * @package thoroughbreds
  */
 get_header();
 ?>
@@ -13,13 +13,13 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <?php do_action('athena_homepage'); ?>
+        <?php do_action('thoroughbreds_homepage'); ?>
 
         <div class="row">
             
             <?php get_sidebar('left'); ?>
 
-            <div class="homepage-page-content col-sm-<?php echo athena_main_width(); ?>">
+            <div class="homepage-page-content col-sm-<?php echo thoroughbreds_main_width(); ?>">
                 
                 <?php if (have_posts()) : ?>
 
@@ -31,7 +31,7 @@ get_header();
 
                     <?php $front = get_option('show_on_front'); ?>
 
-                    <?php echo $front == 'posts' ? '<div class="athena-blog-content">' : ''; ?>
+                    <?php echo $front == 'posts' ? '<div class="thoroughbreds-blog-content">' : ''; ?>
 
                     <?php while (have_posts()) : the_post(); ?>
 
@@ -45,7 +45,7 @@ get_header();
 
                     <?php endwhile; ?>
                     <?php echo $front == 'posts' ? '</div>' : ''; ?>
-                    <div class="athena-pagination">
+                    <div class="thoroughbreds-pagination">
                         <?php echo paginate_links(); ?>
                     </div>
 

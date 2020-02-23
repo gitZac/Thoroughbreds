@@ -1,7 +1,7 @@
 {
-  "name": "athena",
+  "name": "thoroughbreds",
   "version": "1.0.0",
-  "description": "=== Athena ===",
+  "description": "=== thoroughbreds ===",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp"

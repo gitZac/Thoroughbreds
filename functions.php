@@ -1,13 +1,13 @@
 <?php
 /**
- * Athena functions and definitions.
+ * thoroughbreds functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Athena
+ * @package thoroughbreds
  */
 
-if ( ! function_exists( 'athena_setup' ) ) :
+if ( ! function_exists( 'thoroughbreds_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,21 +15,21 @@ if ( ! function_exists( 'athena_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function athena_setup() {
+function thoroughbreds_setup() {
     
     
-        if( !defined( 'ATHENA_VERSION' ) ) :
-            define('ATHENA_VERSION', '1.2.3');
+        if( !defined( 'thoroughbreds_VERSION' ) ) :
+            define('thoroughbreds_VERSION', '1.2.3');
         endif;
     
         
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Athena, use a find and replace
-	 * to change 'athena' to the name of your theme in all the template files.
+	 * If you're building a theme based on thoroughbreds, use a find and replace
+	 * to change 'thoroughbreds' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'athena', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'thoroughbreds', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -56,8 +56,8 @@ function athena_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'athena' ),
-		'footer' => esc_html__( 'Footer Menu', 'athena' ),
+		'primary' => esc_html__( 'Primary Menu', 'thoroughbreds' ),
+		'footer' => esc_html__( 'Footer Menu', 'thoroughbreds' ),
             
 	) );
 
@@ -82,13 +82,13 @@ function athena_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'athena_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'thoroughbreds_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // athena_setup
-add_action( 'after_setup_theme', 'athena_setup' );
+endif; // thoroughbreds_setup
+add_action( 'after_setup_theme', 'thoroughbreds_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -97,10 +97,10 @@ add_action( 'after_setup_theme', 'athena_setup' );
  *
  * @global int $content_width
  */
-function athena_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'athena_content_width', 640 );
+function thoroughbreds_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'thoroughbreds_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'athena_content_width', 0 );
+add_action( 'after_setup_theme', 'thoroughbreds_content_width', 0 );
 
 
 
@@ -127,6 +127,6 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load the theme functions
  */
-require get_template_directory() . '/inc/athena/athena.php';
+require get_template_directory() . '/inc/thoroughbreds/thoroughbreds.php';
 
 require get_template_directory() . '/inc/tgm.php';

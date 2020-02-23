@@ -44,21 +44,21 @@ body.admin-bar{
     font-size: 32px;
 }
 
-#main.athena-page{
+#main.thoroughbreds-page{
     margin-top: 50px;
     padding-top: 30px;
 }
 
-#main.athena-blog{
+#main.thoroughbreds-blog{
     margin-top: 85px;
     padding-top: 30px;
 }
 
-#main.athena-page .entry-content .entry-title{
+#main.thoroughbreds-page .entry-content .entry-title{
     margin-top: 0;
 }
 
-#main.athena-page #athena-page-jumbotron{
+#main.thoroughbreds-page #thoroughbreds-page-jumbotron{
     margin-top: -85px;
 }
 
@@ -92,61 +92,61 @@ body.admin-bar{
 }
 /*-- 1. Header --*/
 
-.athena-branding{
+.thoroughbreds-branding{
     float: left
 }
-.athena-header-menu{
+.thoroughbreds-header-menu{
     float: right;
 }
 
-#athena-logo{
+#thoroughbreds-logo{
     line-height: 85px;
 }
 
-#athena-logo img{
+#thoroughbreds-logo img{
     max-height: 75px;
     padding: 10px 0;
 }
 
-#athena-header.frontpage.sticky .header-inner #athena-logo{
+#thoroughbreds-header.frontpage.sticky .header-inner #thoroughbreds-logo{
     line-height: 50px;
 }
 
-#athena-header.frontpage.sticky .header-inner #athena-logo img{
+#thoroughbreds-header.frontpage.sticky .header-inner #thoroughbreds-logo img{
     max-height: 40px;
 }
 
 
 
-#athena-header{
+#thoroughbreds-header{
     
 }
 
-#athena-header-sticky-wrapper{
+#thoroughbreds-header-sticky-wrapper{
     position: absolute;
     width: 100%;
     margin: 0 auto;
     z-index: 9999;
 }
 
-#athena-header.frontpage.sticky .header-inner{
+#thoroughbreds-header.frontpage.sticky .header-inner{
     height: 50px;
     background: #1b1b1b;
 }
 
-#athena-header.sticky .header-inner .site-title{
+#thoroughbreds-header.sticky .header-inner .site-title{
     font-size: 28px;
     line-height: 50px;
     margin: 0;
 }
 
-#athena-header.sticky .site-description{
+#thoroughbreds-header.sticky .site-description{
     display: none;
 }
 
 
 
-#athena-header.frontpage{
+#thoroughbreds-header.frontpage{
     position: fixed;
     width: 100%;
     top: 0;
@@ -155,12 +155,12 @@ body.admin-bar{
 }
 
 
-#athena-header .header-inner{
+#thoroughbreds-header .header-inner{
     background: #1b1b1b;
     height: 85px;
 }
 
-#athena-header.frontpage .header-inner{
+#thoroughbreds-header.frontpage .header-inner{
     background: rgba(27,27,27,0.3);
     height: 85px;
 }
@@ -193,8 +193,8 @@ body.admin-bar{
     padding: 0px 10px;
 }
 
-#athena-search,
-#athena-contact{
+#thoroughbreds-search,
+#thoroughbreds-contact{
     background: #111111;
     background: rgba( 50, 50, 50, 0.9 );
     position: fixed;
@@ -208,18 +208,18 @@ body.admin-bar{
     padding-top: 150px;
 }
 
-#athena-search .search-field{
+#thoroughbreds-search .search-field{
     padding: 12px 15px;
     border-bottom: 1px solid #f0f0f0;
     font-size: 22px;
 }
 
-#athena-search .search-form{
+#thoroughbreds-search .search-form{
     display: inline-block;
 }
 
-#athena-search .fa.fa-close,
-#athena-contact .fa.fa-close{
+#thoroughbreds-search .fa.fa-close,
+#thoroughbreds-contact .fa.fa-close{
     color: #fff;
     cursor: pointer;
     font-weight: 100;
@@ -230,7 +230,7 @@ body.admin-bar{
     
 }
 
-#athena-search input[type="search"]{
+#thoroughbreds-search input[type="search"]{
     
     border: none;
     outline: none;
@@ -239,8 +239,8 @@ body.admin-bar{
     color: rgba( 255,255,255,0.9);
 }
 
-.main-navigation .athena-cart,
-.athena-mobile-cart .athena-cart{
+.main-navigation .thoroughbreds-cart,
+.thoroughbreds-mobile-cart .thoroughbreds-cart{
     padding: 5px 10px;
     border-radius: 10px;
     background: #e1e1e1;
@@ -248,40 +248,40 @@ body.admin-bar{
     position: relative;
     top: -5px;
 }
-.athena-mobile-cart .athena-cart{
+.thoroughbreds-mobile-cart .thoroughbreds-cart{
     position: initial;
 }
 
 /*-- 2. Navigation --*/
 
-#athena-add-menu{
+#thoroughbreds-add-menu{
     text-align: center;
     padding: 30px 0;
 }
 
-.sticky #athena-add-menu{
+.sticky #thoroughbreds-add-menu{
     text-align: center;
     padding: 15px 0;
 }
 
-#athena-add-menu a{
+#thoroughbreds-add-menu a{
     color: #fff;
 }
 
-.athena-mobile-cart{
+.thoroughbreds-mobile-cart{
     display: none;
     height: 50px;
     line-height: 50px;
     text-align: center;
 }
 
-#athena-header .slicknav_menu{
+#thoroughbreds-header .slicknav_menu{
     float: right;
     background: #1B1B1B;
     display: none;
 }
 
-ul.athena-nav ul {
+ul.thoroughbreds-nav ul {
     box-shadow: none;
     text-align: left;
     float: left;
@@ -294,13 +294,13 @@ ul.athena-nav ul {
 
 }
 
-.sticky ul.athena-nav ul{
+.sticky ul.thoroughbreds-nav ul{
     padding: 9px 0 15px 10px;
     top: 21px;
         
 }
 
-ul.athena-nav ul ul {
+ul.thoroughbreds-nav ul ul {
     float: none;
     left: 0 !important;
     position: relative;
@@ -308,38 +308,38 @@ ul.athena-nav ul ul {
     margin-top: 5px;
 }
 
-ul.athena-nav ul ul li{
+ul.thoroughbreds-nav ul ul li{
     padding: 0px;
     background: transparent;
 }
 
-ul.athena-nav ul li{
+ul.thoroughbreds-nav ul li{
     background: rgb(32, 32, 32);
     padding: 5px 15px 5px 15px;
     width: 100%;
     
 }
-ul.athena-nav ul li:hover ul{
+ul.thoroughbreds-nav ul li:hover ul{
     left: 0;
 }
 
-ul.athena-nav ul li a:hover{
+ul.thoroughbreds-nav ul li a:hover{
     border-bottom: none !important;
 }
 
-ul.athena-nav ul li:last-child{
+ul.thoroughbreds-nav ul li:last-child{
     /*padding-bottom: 20px;*/
 }
 
-ul.athena-nav ul li a{
+ul.thoroughbreds-nav ul li a{
     font-size: 12px;
 }
 
-ul.athena-nav{
+ul.thoroughbreds-nav{
     padding: 20px 10px;
     float: right;
 }
-ul.athena-nav a{
+ul.thoroughbreds-nav a{
     
     font-size: 14px;
     color: #f9f9f9;
@@ -347,11 +347,11 @@ ul.athena-nav a{
     
 }
 
-ul.athena-nav > li.menu-item{
+ul.thoroughbreds-nav > li.menu-item{
     margin-right: 25px;
 }
 
-ul.athena-nav > li.menu-item a{
+ul.thoroughbreds-nav > li.menu-item a{
     margin-right: 0;
     font-weight: 600;
     padding-bottom: 7px;
@@ -362,24 +362,24 @@ ul.athena-nav > li.menu-item a{
     
 }
 
-ul.athena-nav > li.menu-item.current-menu-item a,
-ul.athena-nav > li.menu-item.current-menu-parent a,
-ul.athena-nav > li.menu-item a:hover{
+ul.thoroughbreds-nav > li.menu-item.current-menu-item a,
+ul.thoroughbreds-nav > li.menu-item.current-menu-parent a,
+ul.thoroughbreds-nav > li.menu-item a:hover{
     
     border-bottom: 2px solid #e1e1e1;
 
 }
 
-ul.athena-nav > li.menu-item.current-menu-parent ul a{
+ul.thoroughbreds-nav > li.menu-item.current-menu-parent ul a{
     border-bottom: none !important;
 }
 
-ul.athena-nav > li.menu-item.current-menu-item ul li a{
+ul.thoroughbreds-nav > li.menu-item.current-menu-item ul li a{
     border-bottom: none;
 }
 
 
-ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
+ul.thoroughbreds-nav > li.menu-item.menu-item-has-children > a:after{
     font-family: FontAwesome;
     content: "\f078";
     margin-left: 8px;
@@ -390,12 +390,12 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
 
 
 /*-- 3. Homepage --*/
-#athena-jumbotron{
+#thoroughbreds-jumbotron{
     overflow: hidden;
     height: 100%;
 }
 
-#athena-jumbotron .hero{
+#thoroughbreds-jumbotron .hero{
     /*position: absolute;*/
     top: 0;
     left: 0;
@@ -405,27 +405,27 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     background-size: cover;
 }
 
-#athena-jumbotron .athena-button{
+#thoroughbreds-jumbotron .thoroughbreds-button{
     margin-bottom: 10px;
 }
 
-#athena-jumbotron .overlay{
+#thoroughbreds-jumbotron .overlay{
     position: absolute;
     top: 30%;
     width: 100%;
 }
 
 
-#athena-jumbotron .hero img{
+#thoroughbreds-jumbotron .hero img{
     width: 100%;
 }
 
-#athena-jumbotron h2.header-text{
+#thoroughbreds-jumbotron h2.header-text{
     font-size: 46px;
     color: #fff;
 }
 
-#athena-jumbotron .slider-bottom{
+#thoroughbreds-jumbotron .slider-bottom{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -436,7 +436,7 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     background: transparent;
 }
 
-#athena-jumbotron .slider-bottom .scroll-down{
+#thoroughbreds-jumbotron .slider-bottom .scroll-down{
     color: #fff;
     font-size: 30px;
     font-weight: 100;
@@ -451,12 +451,12 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     text-align: center;
 }
 
-#athena-jumbotron .slider-bottom .scroll-down:hover{
+#thoroughbreds-jumbotron .slider-bottom .scroll-down:hover{
     
     font-size: 34px;    
 }
 
-#athena-featured{
+#thoroughbreds-featured{
     width: 100%;
     min-height: 320px;
     background: #e1e1e1;
@@ -469,14 +469,14 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
 }
 
 
-#athena-video{
+#thoroughbreds-video{
     
     width: 100%;
     position: relative;
     
 }
 
-/*#athena-featured:after{
+/*#thoroughbreds-featured:after{
     background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
@@ -490,17 +490,17 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     height: 32px;
 }*/
 
-#athena-featured .featured-box{
+#thoroughbreds-featured .featured-box{
     padding: 50px 30px;
     min-height: 320px;
     cursor: pointer;
 }
 
-#athena-featured .featured-box2{
+#thoroughbreds-featured .featured-box2{
     background: rgba(50,50,50, 0.1);
 }
 
-#athena-featured .athena-icon{
+#thoroughbreds-featured .thoroughbreds-icon{
     color: #333;
     font-size: 38px;
     margin: 5px 0 25px 0;
@@ -508,13 +508,13 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     
 }
 
-#athena-featured .athena-title{
+#thoroughbreds-featured .thoroughbreds-title{
     margin: 0 0 20px 0;
     font-size: 26px;
     
 }
 
-#athena-featured .athena-desc{
+#thoroughbreds-featured .thoroughbreds-desc{
     margin: 0 0 20px 0;
     font-size: 16px;
     position: relative;
@@ -526,13 +526,13 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     display: none;
 }
 
-#athena-overlay-trigger .overlay-widget{
+#thoroughbreds-overlay-trigger .overlay-widget{
     color: #fff;
     display: none;
 }
 
 
-#athena-overlay-trigger{
+#thoroughbreds-overlay-trigger{
     width: 0;
     height: 0;
     border-style: solid;
@@ -546,12 +546,12 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     z-index: 1;
 }
 
-#athena-overlay-trigger:hover{
+#thoroughbreds-overlay-trigger:hover{
     opacity: 1.0;
 }
 
 
-#athena-overlay-trigger.open{
+#thoroughbreds-overlay-trigger.open{
     width: 100%;
     min-height: 200px;
     height: auto;
@@ -560,7 +560,7 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
     z-index: 0;
 }
 
-#athena-overlay-trigger span.fa{
+#thoroughbreds-overlay-trigger span.fa{
     position: absolute;
     right: 6px;
     top: 28px;
@@ -570,7 +570,7 @@ ul.athena-nav > li.menu-item.menu-item-has-children > a:after{
 }
 
 /*-- 4. Buttons --*/
-.athena-button,
+.thoroughbreds-button,
 button, 
 input[type="button"], 
 input[type="reset"], 
@@ -585,29 +585,29 @@ input[type="submit"]{
     transition: 0.2s all ease-in-out;
 }
 
-.athena-button.large{
+.thoroughbreds-button.large{
     padding: 15px 25px;
     font-size: 20px;
 }
 
-.athena-button:hover{
+.thoroughbreds-button:hover{
     color: #fff;
     background: #505050;
 }
 
-.athena-button.default{
+.thoroughbreds-button.default{
     color: #fff;
     background: #C8C8C8;
     background: rgba( 200, 200, 200, 0.9 );    
 }
 
-.athena-button.default:hover{
+.thoroughbreds-button.default:hover{
     background: #505050;
     color: #fff;
 }
 
 /*-- 5. Footer --*/
-.athena-footer{
+.thoroughbreds-footer{
     
     background-repeat-x: no-repeat;
     background-repeat-y: repeat;
@@ -618,13 +618,13 @@ input[type="submit"]{
     /*padding: 40px 0 0 0;*/
 }
 
-.athena-footer > div{
+.thoroughbreds-footer > div{
     overflow: hidden;
     background: rgba(0,0,0, 0.85);  
     padding: 55px 0 30px 0px;
 }
 
-.athena-footer ul li{
+.thoroughbreds-footer ul li{
     /*border-bottom: 2px solid #000;*/
     padding-bottom: 20px !important;
 }
@@ -641,24 +641,24 @@ input[type="submit"]{
 .site-info a:visited{
     color: rgba(255,255,255,0.9);
 }
-.athena-footer-nav{
+.thoroughbreds-footer-nav{
     margin-top: 10px;
 }
 
-.athena-footer-nav li{
+.thoroughbreds-footer-nav li{
     display: inline-block;
 }
 
-.athena-footer-nav li a{
+.thoroughbreds-footer-nav li a{
     border-bottom: 1px solid rgba(255,255,255,0.9);
 }
 
-.athena-footer-nav li:after{
+.thoroughbreds-footer-nav li:after{
     content: ' / ';
     color: #fff;
 }
 
-.athena-footer-nav li:last-child:after{
+.thoroughbreds-footer-nav li:last-child:after{
     content: '';
 }
 
@@ -696,7 +696,7 @@ input[type="submit"]{
     background: #e1e1e1;
 }
 
-.athena-copyright{
+.thoroughbreds-copyright{
     font-size: 12px;
     padding: 10px 0;
 }
@@ -717,36 +717,36 @@ input[type="submit"]{
 
 /*-- 6. Sidebar --*/
 
-#athena-sidebar{
+#thoroughbreds-sidebar{
     margin-top: 30px;
     overflow: hidden;
 }
 
-#athena-sidebar .widget-title{
+#thoroughbreds-sidebar .widget-title{
     font-size: 14px;
     font-weight: 600;
     margin: 0 0 15px 0;
 }
 
-#athena-sidebar ul li{
+#thoroughbreds-sidebar ul li{
     margin-bottom: 10px;
 }
 
-#athena-sidebar aside{
+#thoroughbreds-sidebar aside{
     margin-bottom: 20px;
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 10px;
 }
 
 /*-- 7. Page --*/
-#athena-page-jumbotron{
+#thoroughbreds-page-jumbotron{
     width: 100%;
     background-size: cover;
     height: 400px;
     overflow: hidden;
 }
 
-#athena-page-jumbotron .entry-title{
+#thoroughbreds-page-jumbotron .entry-title{
     margin-top: 150px;
     text-align: center;
     color: #fff;
@@ -755,7 +755,7 @@ input[type="submit"]{
 
 /*-- 8. Blog --*/
 
-#main.athena-blog .wp-post-image,
+#main.thoroughbreds-blog .wp-post-image,
 .homepage-page-content .post .wp-post-image{
     width: 100%;
 }
@@ -764,19 +764,19 @@ input[type="submit"]{
     display: block;
 }
 
-#main.athena-blog .entry-title{
+#main.thoroughbreds-blog .entry-title{
     margin: 8px 0;
 }
 
-#main.athena-blog .entry-meta .meta-detail{
+#main.thoroughbreds-blog .entry-meta .meta-detail{
     text-align: left;
 }
 
-#main.athena-blog .entry-meta .meta-detail > span{
+#main.thoroughbreds-blog .entry-meta .meta-detail > span{
     margin-right: 12px;
 }
 
-.athena-blog-post{
+.thoroughbreds-blog-post{
     width: 46%;
     margin-right: 1%;
     margin-bottom: 20px;
@@ -788,11 +788,11 @@ input[type="submit"]{
     -webkit-border-radius: 2px;
 }
 
-.athena-blog-post .post-panel-content{
+.thoroughbreds-blog-post .post-panel-content{
     padding: 0 15px 15px 15px;
 }
 
-.athena-blog-page{
+.thoroughbreds-blog-page{
     margin-top: 40px;
 }
 
@@ -801,12 +801,12 @@ input[type="submit"]{
 }
 
 /*------------- Pagination --------------*/
-.athena-pagination{
+.thoroughbreds-pagination{
     text-align: center;
     margin-top: 15px;
 }
-.athena-pagination span,
-.athena-pagination a{
+.thoroughbreds-pagination span,
+.thoroughbreds-pagination a{
     margin-right: 4px;
 }
 
@@ -828,47 +828,47 @@ input[type="submit"]{
 #wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
 
 
-/*----------------- Athena Recent Articles --------------*/
-#athena_recent_posts > div {
+/*----------------- thoroughbreds Recent Articles --------------*/
+#thoroughbreds_recent_posts > div {
     margin-bottom: 30px;
 
 }
-#athena_recent_posts img{
+#thoroughbreds_recent_posts img{
     width: 100%;
 }
-#athena_recent_posts img:hover{
+#thoroughbreds_recent_posts img:hover{
 
 }
-#athena_recent_posts .athena-single-post{
+#thoroughbreds_recent_posts .thoroughbreds-single-post{
     overflow: hidden;
 
 }
-#athena_recent_posts .athena-single-post > div a{
+#thoroughbreds_recent_posts .thoroughbreds-single-post > div a{
 
 }
-#athena_recent_posts .athena-single-post > div{
+#thoroughbreds_recent_posts .thoroughbreds-single-post > div{
     position: relative;
 
 
     overflow: hidden;
 }
-#athena_recent_posts .title{
+#thoroughbreds_recent_posts .title{
     font-weight: 700;
 }
-#athena_recent_posts .athena-single-post > div:hover img{
+#thoroughbreds_recent_posts .thoroughbreds-single-post > div:hover img{
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);   
 }
-#athena_recent_posts .athena-single-post > div img{
+#thoroughbreds_recent_posts .thoroughbreds-single-post > div img{
         transition: 0.3s all ease-in-out;
         -moz-transition: 0.3s all ease-in-out;
         -webkit-transition: 0.3s all ease-in-out;
 }
-#athena_recent_posts .athena-single-post > div img:hover{
+#thoroughbreds_recent_posts .thoroughbreds-single-post > div img:hover{
 
 }
-#athena_recent_posts .overlay{
+#thoroughbreds_recent_posts .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -883,10 +883,10 @@ input[type="submit"]{
     color: #fff;
     font-weight: 600;
 }
-#athena_recent_posts .overlay:hover{
+#thoroughbreds_recent_posts .overlay:hover{
     background: rgba(0,0,0,0);
 }
-#athena_recent_posts .overlay .fa-external-link{
+#thoroughbreds_recent_posts .overlay .fa-external-link{
     opacity: 0;
 
     text-align: center;
@@ -895,20 +895,20 @@ input[type="submit"]{
     -moz-transition: 0.2s all linear;
     -webkit-transition: 0.2s all linear;
 }
-#athena_recent_posts .overlay:hover .fa-external-link{
+#thoroughbreds_recent_posts .overlay:hover .fa-external-link{
     opacity: 1.0;
     transform: scale( 1.5 );
     -webkit-transform: scale( 1.5 );
     -moz-transform: scale( 1.5 );
 }
 
-#athena-homepage-widget{
+#thoroughbreds-homepage-widget{
     /*background: #F2F2F2;*/
     /*padding: 20px 0;*/
     overflow: hidden;
 }
 
-#athena-homepage-widget > div{
+#thoroughbreds-homepage-widget > div{
     overflow: hidden;
     background: rgba(10,10,10, 0.75);
     padding: 55px 0 40px 0px;
@@ -938,29 +938,29 @@ input[type="submit"]{
 
 @media( max-width: 991px ) {
     
-    #athena-header .slicknav_menu{
+    #thoroughbreds-header .slicknav_menu{
         display: block;
     }
     
-    #athena-header .header-inner,
-    #athena-header.frontpage .header-inner{
+    #thoroughbreds-header .header-inner,
+    #thoroughbreds-header.frontpage .header-inner{
         background: #1b1b1b;
         height: 50px;
     }
 
-    #athena-header.frontpage .header-inner #athena-logo{
+    #thoroughbreds-header.frontpage .header-inner #thoroughbreds-logo{
         
         line-height: 50px;
         
     }
     
-    #athena-header.frontpage .header-inner #athena-logo img{
+    #thoroughbreds-header.frontpage .header-inner #thoroughbreds-logo img{
         
         max-height: 40px;
         
     }
     
-    #athena-header .header-inner .site-title{
+    #thoroughbreds-header .header-inner .site-title{
         font-size: 28px;
         line-height: 50px;
         margin: 0;
@@ -982,20 +982,20 @@ input[type="submit"]{
         float: left;
     }
     
-    .athena-mobile-cart{
+    .thoroughbreds-mobile-cart{
         display: inline-block;
         float: right;
     }
     
-    div.athena-blog-content article h2.entry-title {
+    div.thoroughbreds-blog-content article h2.entry-title {
         font-size: 20px;
     }
     
-    #athena-logo img {
+    #thoroughbreds-logo img {
         max-height: 50px;
     }
 
-    #athena-logo {
+    #thoroughbreds-logo {
         line-height: 50px;
     }
     

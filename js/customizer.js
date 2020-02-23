@@ -12,11 +12,11 @@
     
     
     
-            function athena_slider() {
+            function thoroughbreds_slider() {
 
                 var height = get_height();
 
-                jQuery('#athena-slider').camera({
+                jQuery('#thoroughbreds-slider').camera({
                     height: height + 'px',
                     loader: false,
                     overlay: false,
@@ -108,66 +108,66 @@
 	wp.customize( 'callout1_icon', function( value ) {
 		value.bind( function( to ) {
 
-                    $( '.featured-box1 .athena-icon span' ).remove();
-                    $( '.featured-box1 .athena-icon' ).append('<span class="' + to + '"></span>');
+                    $( '.featured-box1 .thoroughbreds-icon span' ).remove();
+                    $( '.featured-box1 .thoroughbreds-icon' ).append('<span class="' + to + '"></span>');
                     
 		} );
 	} );
 	wp.customize( 'callout1_title', function( value ) {
 		value.bind( function( to ) {
 
-                $( '.featured-box1 .athena-title' ).text( to );
+                $( '.featured-box1 .thoroughbreds-title' ).text( to );
                     
 		} );
 	} );
 	wp.customize( 'callout1_text', function( value ) {
 		value.bind( function( to ) {
 
-                $( '.featured-box1 .athena-desc' ).text( to );
+                $( '.featured-box1 .thoroughbreds-desc' ).text( to );
                     
 		} );
 	} );
 	wp.customize( 'callout2_icon', function( value ) {
 		value.bind( function( to ) {
 
-                    $( '.featured-box2 .athena-icon span' ).remove();
-                    $( '.featured-box2 .athena-icon' ).append('<span class="' + to + '"></span>');
+                    $( '.featured-box2 .thoroughbreds-icon span' ).remove();
+                    $( '.featured-box2 .thoroughbreds-icon' ).append('<span class="' + to + '"></span>');
                     
 		} );
 	} );
 	wp.customize( 'callout2_title', function( value ) {
 		value.bind( function( to ) {
 
-                $( '.featured-box2 .athena-title' ).text( to );
+                $( '.featured-box2 .thoroughbreds-title' ).text( to );
                     
 		} );
 	} );
 	wp.customize( 'callout2_text', function( value ) {
 		value.bind( function( to ) {
 
-                $( '.featured-box2 .athena-desc' ).text( to );
+                $( '.featured-box2 .thoroughbreds-desc' ).text( to );
                     
 		} );
 	} );
 	wp.customize( 'callout3_icon', function( value ) {
 		value.bind( function( to ) {
 
-                    $( '.featured-box3 .athena-icon span' ).remove();
-                    $( '.featured-box3 .athena-icon' ).append('<span class="' + to + '"></span>');
+                    $( '.featured-box3 .thoroughbreds-icon span' ).remove();
+                    $( '.featured-box3 .thoroughbreds-icon' ).append('<span class="' + to + '"></span>');
                     
 		} );
 	} );
 	wp.customize( 'callout3_title', function( value ) {
 		value.bind( function( to ) {
 
-                $( '.featured-box3 .athena-title' ).text( to );
+                $( '.featured-box3 .thoroughbreds-title' ).text( to );
                     
 		} );
 	} );
 	wp.customize( 'callout3_text', function( value ) {
 		value.bind( function( to ) {
 
-                $( '.featured-box3 .athena-desc' ).text( to );
+                $( '.featured-box3 .thoroughbreds-desc' ).text( to );
                     
 		} );
 	} );
@@ -175,9 +175,9 @@
 		value.bind( function( to ) {
 
                     if( to == 'on' ) {
-                        $('#athena-overlay-trigger').show();
+                        $('#thoroughbreds-overlay-trigger').show();
                     }else{
-                        $('#athena-overlay-trigger').hide();
+                        $('#thoroughbreds-overlay-trigger').hide();
                     }
                     
 		} );
@@ -185,8 +185,8 @@
 	wp.customize( 'overlay_icon', function( value ) {
 		value.bind( function( to ) {
 
-                    $( '#athena-overlay-trigger span' ).remove();
-                    $( '#athena-overlay-trigger' ).append('<span class="' + to + '"></span>');
+                    $( '#thoroughbreds-overlay-trigger span' ).remove();
+                    $( '#thoroughbreds-overlay-trigger' ).append('<span class="' + to + '"></span>');
                     
 		} );
 	} );
@@ -194,10 +194,10 @@
 		value.bind( function( to ) {
 
                     if( to == 'on' ) {
-                        $('#athena-logo').removeClass('hidden');
+                        $('#thoroughbreds-logo').removeClass('hidden');
                         $('.site-title, .site-description').addClass('hidden');
                     }else{
-                        $('#athena-logo').addClass('hidden');
+                        $('#thoroughbreds-logo').addClass('hidden');
                         $('.site-title, .site-description').removeClass('hidden');                        
                     }
                     
@@ -206,25 +206,25 @@
 	wp.customize( 'logo', function( value ) {
 		value.bind( function( to ) {
 
-                    $('#athena-logo img').attr('src', to );
+                    $('#thoroughbreds-logo img').attr('src', to );
                     
 		} );
 	} );
 	wp.customize( 'theme_color', function( value ) {
 		value.bind( function( to ) {
 
-                    var uri = $('#athena-template-css').attr('href');
+                    var uri = $('#thoroughbreds-template-css').attr('href');
                     
                     var new_uri = uri.slice(0, uri.lastIndexOf('/') ) + '/' + to + '.css';
                     
-                    $('#athena-template-css').attr('href', new_uri );
+                    $('#thoroughbreds-template-css').attr('href', new_uri );
                     
 		} );
 	} );
 	wp.customize( 'header_font', function( value ) {
 		value.bind( function( to ) {
                     
-                    $('h1,h2,h3,h4,h5,h6,.slide2-header,.slide1-header,.athena-title, .widget-title,.entry-title, .product_title').css({
+                    $('h1,h2,h3,h4,h5,h6,.slide2-header,.slide1-header,.thoroughbreds-title, .widget-title,.entry-title, .product_title').css({
                         'font-family': to
                     });
 
@@ -242,7 +242,7 @@
 	wp.customize( 'menu_font_size', function( value ) {
 		value.bind( function( to ) {
                     
-                    $('ul.athena-nav > li.menu-item a').css({
+                    $('ul.thoroughbreds-nav > li.menu-item a').css({
                         'font-size': to
                     });
 
@@ -268,61 +268,61 @@
         wp.customize( 'copyright_text', function( value ) {
 		value.bind( function( to ) {
                     
-                    $('.athena-copyright').text( to );
+                    $('.thoroughbreds-copyright').text( to );
 
 		} );
 	} );
         wp.customize( 'facebook_url', function( value ) {
 		value.bind( function( to ) {
                     if( to == '' ) {
-                        $('.athena-facebook').hide();
+                        $('.thoroughbreds-facebook').hide();
                     }else{
-                        $('.athena-facebook').show();
+                        $('.thoroughbreds-facebook').show();
                     }
 		} );
 	} );
         wp.customize( 'gplus_url', function( value ) {
 		value.bind( function( to ) {
                     if( to == '' ) {
-                        $('.athena-gplus').hide();
+                        $('.thoroughbreds-gplus').hide();
                     }else{
-                        $('.athena-gplus').show();
+                        $('.thoroughbreds-gplus').show();
                     }
 		} );
 	} );
         wp.customize( 'instagram_url', function( value ) {
 		value.bind( function( to ) {
                     if( to == '' ) {
-                        $('.athena-instagram').hide();
+                        $('.thoroughbreds-instagram').hide();
                     }else{
-                        $('.athena-instagram').show();
+                        $('.thoroughbreds-instagram').show();
                     }
 		} );
 	} );
         wp.customize( 'linkedin_url', function( value ) {
 		value.bind( function( to ) {
                     if( to == '' ) {
-                        $('.athena-linkedin').hide();
+                        $('.thoroughbreds-linkedin').hide();
                     }else{
-                        $('.athena-linkedin').show();
+                        $('.thoroughbreds-linkedin').show();
                     }
 		} );
 	} );
         wp.customize( 'pinterest_url', function( value ) {
 		value.bind( function( to ) {
                     if( to == '' ) {
-                        $('.athena-pinterest').hide();
+                        $('.thoroughbreds-pinterest').hide();
                     }else{
-                        $('.athena-pinterest').show();
+                        $('.thoroughbreds-pinterest').show();
                     }
 		} );
 	} );
         wp.customize( 'twitter_url', function( value ) {
 		value.bind( function( to ) {
                     if( to == '' ) {
-                        $('.athena-twitter').hide();
+                        $('.thoroughbreds-twitter').hide();
                     }else{
-                        $('.athena-twitter').show();
+                        $('.thoroughbreds-twitter').show();
                     }
 		} );
 	} );
