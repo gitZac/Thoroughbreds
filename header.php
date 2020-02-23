@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Athena
+ * @package thoroughbreds
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -21,7 +21,7 @@
 
     <body <?php body_class(); ?>>
         
-        <div id="athena-search" class="noshow">
+        <div id="thoroughbreds-search" class="noshow">
             
             <div class="row">
                 
@@ -39,21 +39,21 @@
         
         <div id="page" class="hfeed site">
 
-            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'athena'); ?></a>
+            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'thoroughbreds'); ?></a>
 
             <header id="masthead" class="site-header" role="banner">
 
-                <div id="athena-header" class="<?php echo is_front_page() ? 'frontpage' : ''; ?>">
+                <div id="thoroughbreds-header" class="<?php echo is_front_page() ? 'frontpage' : ''; ?>">
 
                     <div class="header-inner">
 
                         <div class="row">
 
-                            <div class="athena-branding">
+                            <div class="thoroughbreds-branding">
 
                                 <div class="site-branding">
                                     
-                                    <div id="athena-logo" class="<?php echo get_theme_mod('logo_bool', 'on' ) == 'on' ? 'show' : 'hidden'; ?>">
+                                    <div id="thoroughbreds-logo" class="<?php echo get_theme_mod('logo_bool', 'on' ) == 'on' ? 'show' : 'hidden'; ?>">
                                         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                                             <img src="<?php echo get_theme_mod( 'logo', get_template_directory_uri() . '/inc/images/logo.png' ) ?>" title="<?php bloginfo('name'); ?>" />
                                         </a>
@@ -72,13 +72,13 @@
 
                             </div>
 
-                            <div class="athena-header-menu">
+                            <div class="thoroughbreds-header-menu">
 
                                 <?php if( class_exists( 'WooCommerce' ) ) : ?>
                                 
-                                    <div class="athena-mobile-cart">
+                                    <div class="thoroughbreds-mobile-cart">
 
-                                        <a class="athena-cart" href="<?php echo function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url(); ?>"><span class="fa fa-shopping-cart"></span> <?php echo WC()->cart->get_cart_total(); ?></a>
+                                        <a class="thoroughbreds-cart" href="<?php echo function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url(); ?>"><span class="fa fa-shopping-cart"></span> <?php echo WC()->cart->get_cart_total(); ?></a>
 
                                     </div>
                                 
@@ -94,11 +94,11 @@
                                         $menu = wp_nav_menu(array(
                                             'theme_location' => 'primary',
                                             'menu_id' => 'primary-menu',
-                                            'menu_class' => 'athena-nav',
+                                            'menu_class' => 'thoroughbreds-nav',
                                         ));
                                     else :
                                         
-                                        echo '<div id="athena-add-menu"><a class="athena-cart" href="' . admin_url( 'nav-menus.php' ) . '">' . __( 'Add a Primary Menu', 'athena' ) . '</a></div>';
+                                        echo '<div id="thoroughbreds-add-menu"><a class="thoroughbreds-cart" href="' . admin_url( 'nav-menus.php' ) . '">' . __( 'Add a Primary Menu', 'thoroughbreds' ) . '</a></div>';
                                     
                                     endif;
                                     

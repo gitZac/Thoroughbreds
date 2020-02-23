@@ -5,6 +5,6 @@ if ( ! is_active_sidebar( 'sidebar-overlay' ) ) {
 }
 ?>
 
-<div id="athena-overlay" class="widget-area">
+<div id="thoroughbreds-overlay" class="widget-area">
 	<?php dynamic_sidebar( 'sidebar-overlay' ); ?>
 </div>

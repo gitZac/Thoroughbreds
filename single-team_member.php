@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Athena - Team Member Single Template
+ * thoroughbreds - Team Member Single Template
  * Last Updated: Feb 8th, 2016
  * Current version of the plugin : 3.0.0
  * 

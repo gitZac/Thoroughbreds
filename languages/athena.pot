@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Athena\n"
+"Project-Id-Version: thoroughbreds\n"
 "POT-Creation-Date: 2016-02-08 14:38-0500\n"
 "PO-Revision-Date: 2016-02-08 14:38-0500\n"
 "Last-Translator: \n"
@@ -79,102 +79,102 @@ msgstr ""
 msgid "Add a Primary Menu"
 msgstr ""
 
-#: inc/athena.php:72
+#: inc/thoroughbreds.php:72
 msgid "Right Sidebar"
 msgstr ""
 
-#: inc/athena.php:82
+#: inc/thoroughbreds.php:82
 msgid "Left Sidebar"
 msgstr ""
 
-#: inc/athena.php:92
+#: inc/thoroughbreds.php:92
 msgid "Shop Sidebar ( WooCommerce )"
 msgstr ""
 
-#: inc/athena.php:103 inc/customizer.php:579
+#: inc/thoroughbreds.php:103 inc/customizer.php:579
 msgid "Footer"
 msgstr ""
 
-#: inc/athena.php:113
+#: inc/thoroughbreds.php:113
 msgid "Slider Overlay"
 msgstr ""
 
-#: inc/athena.php:123
+#: inc/thoroughbreds.php:123
 msgid "Homepage"
 msgstr ""
 
-#: inc/athena.php:277 inc/athena.php:306 inc/customizer.php:84
+#: inc/thoroughbreds.php:277 inc/thoroughbreds.php:306 inc/customizer.php:84
 #: inc/customizer.php:166
-msgid "Welcome to Athena"
+msgid "Welcome to thoroughbreds"
 msgstr ""
 
-#: inc/athena.php:281 inc/athena.php:310 inc/customizer.php:99
+#: inc/thoroughbreds.php:281 inc/thoroughbreds.php:310 inc/customizer.php:99
 #: inc/customizer.php:179
 msgid "View Features"
 msgstr ""
 
-#: inc/athena.php:286 inc/athena.php:315 inc/customizer.php:125
+#: inc/thoroughbreds.php:286 inc/thoroughbreds.php:315 inc/customizer.php:125
 #: inc/customizer.php:205
 msgid "Learn More"
 msgstr ""
 
-#: inc/athena.php:362
+#: inc/thoroughbreds.php:362
 msgid "fa fa-laptop"
 msgstr ""
 
-#: inc/athena.php:365
+#: inc/thoroughbreds.php:365
 msgid "Responsive"
 msgstr ""
 
-#: inc/athena.php:367
-msgid "Athena looks amazing on desktop and mobile devices."
+#: inc/thoroughbreds.php:367
+msgid "thoroughbreds looks amazing on desktop and mobile devices."
 msgstr ""
 
-#: inc/athena.php:378
+#: inc/thoroughbreds.php:378
 msgid "fa fa-magic"
 msgstr ""
 
-#: inc/athena.php:381 inc/customizer.php:368
+#: inc/thoroughbreds.php:381 inc/customizer.php:368
 msgid "Customizable"
 msgstr ""
 
-#: inc/athena.php:383 inc/customizer.php:382
-msgid "Athena is easy to use and customize without having to touch code"
+#: inc/thoroughbreds.php:383 inc/customizer.php:382
+msgid "thoroughbreds is easy to use and customize without having to touch code"
 msgstr ""
 
-#: inc/athena.php:394
+#: inc/thoroughbreds.php:394
 msgid "fa fa-shopping-cart"
 msgstr ""
 
-#: inc/athena.php:397 inc/customizer.php:410
+#: inc/thoroughbreds.php:397 inc/customizer.php:410
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/athena.php:399 inc/customizer.php:424
-msgid "Athena supports WooCommerce to build an online shopping site"
+#: inc/thoroughbreds.php:399 inc/customizer.php:424
+msgid "thoroughbreds supports WooCommerce to build an online shopping site"
 msgstr ""
 
-#: inc/athena.php:437
+#: inc/thoroughbreds.php:437
 msgid "Copyright Company Name 2015"
 msgstr ""
 
-#: inc/athena.php:491
+#: inc/thoroughbreds.php:491
 msgid "Design by"
 msgstr ""
 
-#: inc/athena.php:516
-msgid "Athena Recent Articles"
+#: inc/thoroughbreds.php:516
+msgid "thoroughbreds Recent Articles"
 msgstr ""
 
-#: inc/athena.php:516
-msgid "Use this widget to display the Athena Recent Posts."
+#: inc/thoroughbreds.php:516
+msgid "Use this widget to display the thoroughbreds Recent Posts."
 msgstr ""
 
-#: inc/athena.php:545
+#: inc/thoroughbreds.php:545
 msgid "Recent Articles"
 msgstr ""
 
-#: inc/athena.php:550
+#: inc/thoroughbreds.php:550
 msgid "Title:"
 msgstr ""
 
@@ -653,7 +653,7 @@ msgstr ""
 
 #: inc/customizer.php:52
 msgid ""
-"Customize the slider. Athena includes 2 slides, and the pro version supports "
+"Customize the slider. thoroughbreds includes 2 slides, and the pro version supports "
 "up to 5"
 msgstr ""
 
@@ -781,7 +781,7 @@ msgstr ""
 
 #: inc/customizer.php:340
 msgid ""
-"Athena is a carefully designed and developed theme that you can use to make "
+"thoroughbreds is a carefully designed and developed theme that you can use to make "
 "your site stand out"
 msgstr ""
 
@@ -3730,14 +3730,14 @@ msgstr ""
 
 #: inc/tgm.php:69
 #, php-format
-msgid "Athena theme requires the following plugin: %1$s."
+msgid "thoroughbreds theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
 #: inc/tgm.php:72
 #, php-format
-msgid "Athena theme recommends the following plugin: %1$s."
+msgid "thoroughbreds theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
@@ -3785,27 +3785,27 @@ msgid ""
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Athena"
+msgid "thoroughbreds"
 msgstr ""
 
 #. Theme URI of the plugin/theme
 msgid ""
-"https://smartcatdesign.net/articles/athena-responsive-multipurpose-wordpress-"
+"https://smartcatdesign.net/articles/thoroughbreds-responsive-multipurpose-wordpress-"
 "theme/"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Build your site Athena with ease. Athena is a feature-loaded, user-friendly, "
+"Build your site thoroughbreds with ease. thoroughbreds is a feature-loaded, user-friendly, "
 "fully responsive, Parallax modern WordPress theme built with care and SEO in "
 "mind. It is a multi-purpose theme with a design that can be used by a "
 "business, restaurant, freelancers, photographers, bloggers, musicians and "
-"creative agencies. Athena features a full width frontpage slider, animated "
+"creative agencies. thoroughbreds features a full width frontpage slider, animated "
 "callouts with over 600 icons to choose from. The blog is an attractive "
 "masonry grid. It comes with many color options, left and right sidebars, 6 "
 "widget areas, primary and footer menus, mobile responsive menu and links to "
-"your social media sites . Athena allows you to fully customize your site "
-"without having to work with code. Athena also features a live customizer, "
+"your social media sites . thoroughbreds allows you to fully customize your site "
+"without having to work with code. thoroughbreds also features a live customizer, "
 "allowing you to change settings and preview them live."
 msgstr ""
 

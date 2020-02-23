@@ -4,21 +4,21 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Athena
+ * @package thoroughbreds
  */
 
 get_header(); ?>
 
 <div id="primary" class="content-area">
 
-    <main id="main" class="site-main athena-blog-page" role="main">
+    <main id="main" class="site-main thoroughbreds-blog-page" role="main">
 
 
         <div class="row">
 
             <?php get_sidebar('left'); ?>
 
-            <div class="athena-blog-content col-sm-<?php echo athena_main_width(); ?>">
+            <div class="thoroughbreds-blog-content col-sm-<?php echo thoroughbreds_main_width(); ?>">
                 <?php if (have_posts()) : ?>
 
 
@@ -43,7 +43,7 @@ get_header(); ?>
 
         </div>
         <div class="clear"></div>
-        <div class="athena-pagination">
+        <div class="thoroughbreds-pagination">
             <?php echo paginate_links(); ?>
         </div>
     </main><!-- #main -->

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Athena
+ * @package thoroughbreds
  */
 get_header();
 ?>
@@ -12,11 +12,11 @@ get_header();
 
 <div id="primary" class="content-area">
 
-    <main id="main" class="site-main athena-blog-page" role="main">
+    <main id="main" class="site-main thoroughbreds-blog-page" role="main">
 
         <div class="row">
             <div class="col-sm-12">
-                <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'athena'), '<span>' . get_search_query() . '</span>'); ?></h1>
+                <h1 class="page-title"><?php printf(esc_html__('Search Results for: %s', 'thoroughbreds'), '<span>' . get_search_query() . '</span>'); ?></h1>
             </div>
             
         </div>
@@ -25,7 +25,7 @@ get_header();
 
             <?php get_sidebar('left'); ?>
 
-            <div class="athena-blog-content col-sm-<?php echo athena_main_width(); ?>">
+            <div class="thoroughbreds-blog-content col-sm-<?php echo thoroughbreds_main_width(); ?>">
                 <?php if (have_posts()) : ?>
 
                     <?php /* Start the Loop */ ?>
@@ -46,7 +46,7 @@ get_header();
 
         </div>
         <div class="clear"></div>
-        <div class="athena-pagination">
+        <div class="thoroughbreds-pagination">
             <?php echo paginate_links(); ?>
         </div>
     </main><!-- #main -->

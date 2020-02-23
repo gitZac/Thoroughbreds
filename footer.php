@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Athena
+ * @package thoroughbreds
  */
 ?>
 
@@ -14,7 +14,7 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     
-    <?php do_action( 'athena_footer' ); ?>
+    <?php do_action( 'thoroughbreds_footer' ); ?>
     
 </footer><!-- #colophon -->
 </div><!-- #page -->

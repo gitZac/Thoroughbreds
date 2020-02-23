@@ -2,9 +2,9 @@
 
 /**
  * 
- * Athena WordPress Theme
+ * thoroughbreds WordPress Theme
  * 
- * This file contains most of the work done by Athena
+ * This file contains most of the work done by thoroughbreds
  * It's pretty straight forward, feel free to edit if you're comfortable with basic PHP
  * 
  * If you got here, thank you for using this theme ! Hack away at it as you see fit.
@@ -14,13 +14,13 @@
  */
 
 
-function athena_scripts() {
+function thoroughbreds_scripts() {
 
-    wp_enqueue_style('athena-style', get_stylesheet_uri() );
+    wp_enqueue_style('thoroughbreds-style', get_stylesheet_uri() );
 
-    wp_enqueue_script('athena-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
+    wp_enqueue_script('thoroughbreds-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true);
 
-    wp_enqueue_script('athena-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
+    wp_enqueue_script('thoroughbreds-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -28,45 +28,45 @@ function athena_scripts() {
 
 
     if ( 'Raleway, sans-serif' == get_theme_mod('header_font', 'Raleway, sans-serif') || 'Raleway, sans-serif' == get_theme_mod('theme_font', 'Raleway, sans-serif') )
-        wp_enqueue_style('athena-font-raleway', '//fonts.googleapis.com/css?family=Raleway:400,300,600', array(), ATHENA_VERSION);
+        wp_enqueue_style('thoroughbreds-font-raleway', '//fonts.googleapis.com/css?family=Raleway:400,300,600', array(), thoroughbreds_VERSION);
 
     if ( 'Lato, sans-serif' == get_theme_mod('header_font', 'Raleway, sans-serif') || 'Lato, sans-serif' == get_theme_mod('theme_font', 'Raleway, sans-serif') )
-        wp_enqueue_style('athena-font-lato', '//fonts.googleapis.com/css?family=Lato:400,700,300', array(), ATHENA_VERSION);
+        wp_enqueue_style('thoroughbreds-font-lato', '//fonts.googleapis.com/css?family=Lato:400,700,300', array(), thoroughbreds_VERSION);
 
     if ( 'Source Sans Pro, sans-serif' == get_theme_mod('header_font', 'Raleway, sans-serif') || 'Source Sans Pro, sans-serif' == get_theme_mod('theme_font', 'Raleway, sans-serif') )
-        wp_enqueue_style('athena-font-source', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,300', array(), ATHENA_VERSION);
+        wp_enqueue_style('thoroughbreds-font-source', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,300', array(), thoroughbreds_VERSION);
 
     if ( 'Open Sans, sans-serif' == get_theme_mod('header_font', 'Raleway, sans-serif') || 'Open Sans, sans-serif' == get_theme_mod('theme_font', 'Raleway, sans-serif') )
-        wp_enqueue_style('athena-font-opensans', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600', array(), ATHENA_VERSION);
+        wp_enqueue_style('thoroughbreds-font-opensans', '//fonts.googleapis.com/css?family=Open+Sans:400,300,600', array(), thoroughbreds_VERSION);
 
     if ( 'Lobster Two, cursive' == get_theme_mod('header_font', 'Raleway, sans-serif') || 'Lobster Two, cursive' == get_theme_mod('theme_font', 'Raleway, sans-serif') )
-        wp_enqueue_style('athena-font-lobster', '//fonts.googleapis.com/css?family=Lobster+Two:400,700', array(), ATHENA_VERSION);
+        wp_enqueue_style('thoroughbreds-font-lobster', '//fonts.googleapis.com/css?family=Lobster+Two:400,700', array(), thoroughbreds_VERSION);
 
-    wp_enqueue_style('athena-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-bootstrap-theme', get_template_directory_uri() . '/inc/css/bootstrap-theme.min.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-fontawesome', get_template_directory_uri() . '/inc/css/font-awesome.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-main-style', get_template_directory_uri() . '/inc/css/style.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-camera-style', get_template_directory_uri() . '/inc/css/camera.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-animations', get_template_directory_uri() . '/inc/css/animate.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-slicknav', get_template_directory_uri() . '/inc/css/slicknav.min.css', array(), ATHENA_VERSION);
-    wp_enqueue_style('athena-template', get_template_directory_uri() . '/inc/css/temps/' . esc_attr(get_theme_mod('theme_color', 'green')) . '.css', array(), ATHENA_VERSION);
+    wp_enqueue_style('thoroughbreds-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-bootstrap-theme', get_template_directory_uri() . '/inc/css/bootstrap-theme.min.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-fontawesome', get_template_directory_uri() . '/inc/css/font-awesome.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-main-style', get_template_directory_uri() . '/dist/assets/css/bundle.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-camera-style', get_template_directory_uri() . '/inc/css/camera.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-animations', get_template_directory_uri() . '/inc/css/animate.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-slicknav', get_template_directory_uri() . '/inc/css/slicknav.min.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-template', get_template_directory_uri() . '/inc/css/temps/' . esc_attr(get_theme_mod('theme_color', 'green')) . '.css', array(), thoroughbreds_VERSION);
 
-    wp_enqueue_script('athena-sticky', get_template_directory_uri() . '/inc/js/sticky.min.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-easing', get_template_directory_uri() . '/inc/js/easing.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-camera', get_template_directory_uri() . '/inc/js/camera.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-parallax', get_template_directory_uri() . '/inc/js/parallax.min.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-carousel', get_template_directory_uri() . '/inc/js/owl.carousel.min.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-slicknav', get_template_directory_uri() . '/inc/js/slicknav.min.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-wow', get_template_directory_uri() . '/inc/js/wow.js', array('jquery'), ATHENA_VERSION, true);
-    wp_enqueue_script('athena-script', get_template_directory_uri() . '/inc/js/script.js', array('jquery', 'jquery-ui-core', 'jquery-masonry'), ATHENA_VERSION);
+    wp_enqueue_script('thoroughbreds-sticky', get_template_directory_uri() . '/inc/js/sticky.min.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-easing', get_template_directory_uri() . '/inc/js/easing.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-camera', get_template_directory_uri() . '/inc/js/camera.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-parallax', get_template_directory_uri() . '/inc/js/parallax.min.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-carousel', get_template_directory_uri() . '/inc/js/owl.carousel.min.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-slicknav', get_template_directory_uri() . '/inc/js/slicknav.min.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-wow', get_template_directory_uri() . '/inc/js/wow.js', array('jquery'), thoroughbreds_VERSION, true);
+    wp_enqueue_script('thoroughbreds-script', get_template_directory_uri() . '/inc/js/script.js', array('jquery', 'jquery-ui-core', 'jquery-masonry'), thoroughbreds_VERSION);
 }
 
-add_action('wp_enqueue_scripts', 'athena_scripts');
+add_action('wp_enqueue_scripts', 'thoroughbreds_scripts');
 
-function athena_widgets_init() {
+function thoroughbreds_widgets_init() {
 
     register_sidebar(array(
-        'name' => esc_html__('Right Sidebar', 'athena'),
+        'name' => esc_html__('Right Sidebar', 'thoroughbreds'),
         'id' => 'sidebar-right',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -76,7 +76,7 @@ function athena_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Left Sidebar', 'athena'),
+        'name' => esc_html__('Left Sidebar', 'thoroughbreds'),
         'id' => 'sidebar-left',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -86,7 +86,7 @@ function athena_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Shop Sidebar ( WooCommerce )', 'athena'),
+        'name' => esc_html__('Shop Sidebar ( WooCommerce )', 'thoroughbreds'),
         'id' => 'sidebar-shop',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -97,7 +97,7 @@ function athena_widgets_init() {
 
 
     register_sidebar(array(
-        'name' => esc_html__('Footer', 'athena'),
+        'name' => esc_html__('Footer', 'thoroughbreds'),
         'id' => 'sidebar-footer',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s col-sm-4">',
@@ -107,7 +107,7 @@ function athena_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Slider Overlay', 'athena'),
+        'name' => esc_html__('Slider Overlay', 'thoroughbreds'),
         'id' => 'sidebar-overlay',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s col-sm-6">',
@@ -117,7 +117,7 @@ function athena_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name' => esc_html__('Homepage', 'athena'),
+        'name' => esc_html__('Homepage', 'thoroughbreds'),
         'id' => 'sidebar-homepage',
         'description' => '',
         'before_widget' => '<aside id="%1$s" class="widget %2$s col-sm-12">',
@@ -127,11 +127,11 @@ function athena_widgets_init() {
     ));
 }
 
-add_action('widgets_init', 'athena_widgets_init');
+add_action('widgets_init', 'thoroughbreds_widgets_init');
 
 
 
-function athena_do_left_sidebar( $args ) {
+function thoroughbreds_do_left_sidebar( $args ) {
     
     if( get_theme_mod( 'sidebar_location', 'right' ) == 'none' ) :
         return;
@@ -150,16 +150,16 @@ function athena_do_left_sidebar( $args ) {
     
     if( get_theme_mod( 'sidebar_location', 'right' ) == 'left' ) :
         
-        echo '<div class="col-sm-4" id="athena-sidebar">' .
+        echo '<div class="col-sm-4" id="thoroughbreds-sidebar">' .
         get_sidebar() . '</div>';
         
     endif;
     
     
 }
-add_action('athena-sidebar-left', 'athena_do_left_sidebar');
+add_action('thoroughbreds-sidebar-left', 'thoroughbreds_do_left_sidebar');
 
-function athena_do_right_sidebar( $args ) {
+function thoroughbreds_do_right_sidebar( $args ) {
     
     if( get_theme_mod( 'sidebar_location', 'right' ) == 'none' ) :
         return;
@@ -178,7 +178,7 @@ function athena_do_right_sidebar( $args ) {
     
     if( get_theme_mod( 'sidebar_location', 'right' ) == 'right' ) :
         
-        echo '<div class="col-sm-4" id="athena-sidebar">';
+        echo '<div class="col-sm-4" id="thoroughbreds-sidebar">';
     
         get_sidebar();
         
@@ -188,9 +188,9 @@ function athena_do_right_sidebar( $args ) {
     
     
 }
-add_action('athena-sidebar-right', 'athena_do_right_sidebar');
+add_action('thoroughbreds-sidebar-right', 'thoroughbreds_do_right_sidebar');
 
-function athena_main_width(){
+function thoroughbreds_main_width(){
     
     $width = 12;
     
@@ -209,23 +209,23 @@ function athena_main_width(){
 }
 
 
-function athena_get_image() {
+function thoroughbreds_get_image() {
 
     echo wp_get_attachment_url($POST['id']);
 
     exit();
 }
 
-add_action('wp_ajax_athena_get_image', 'athena_get_image');
+add_action('wp_ajax_thoroughbreds_get_image', 'thoroughbreds_get_image');
 
-function athena_customize_nav($items) {
+function thoroughbreds_customize_nav($items) {
 
     if( get_theme_mod( 'show_search', 'on' ) == 'on' ) :
-    $items .= '<li class="menu-item"><a class="athena-search" href="#search" role="button" data-toggle="modal"><span class="fa fa-search"></span></a></li>';
+    $items .= '<li class="menu-item"><a class="thoroughbreds-search" href="#search" role="button" data-toggle="modal"><span class="fa fa-search"></span></a></li>';
     endif;
     
     if( class_exists( 'WooCommerce' ) ) :
-        $items .= '<li><a class="athena-cart" href="' . ( function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url() ) . '"><span class="fa fa-shopping-cart"></span> ' . WC()->cart->get_cart_total() . '</a></li>';
+        $items .= '<li><a class="thoroughbreds-cart" href="' . ( function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url() ) . '"><span class="fa fa-shopping-cart"></span> ' . WC()->cart->get_cart_total() . '</a></li>';
     endif;
     
     
@@ -233,10 +233,10 @@ function athena_customize_nav($items) {
     return $items;
 }
 
-add_filter('wp_nav_menu_items', 'athena_customize_nav');
+add_filter('wp_nav_menu_items', 'thoroughbreds_customize_nav');
 
 
-function athena_custom_css() {
+function thoroughbreds_custom_css() {
     ?>
     <style type="text/css">
 
@@ -246,11 +246,11 @@ function athena_custom_css() {
             font-family: <?php echo esc_attr( get_theme_mod( 'theme_font', 'Raleway, sans-serif' ) ); ?>;
 
         }
-        h1,h2,h3,h4,h5,h6,.slide2-header,.slide1-header,.athena-title, .widget-title,.entry-title, .product_title{
+        h1,h2,h3,h4,h5,h6,.slide2-header,.slide1-header,.thoroughbreds-title, .widget-title,.entry-title, .product_title{
             font-family: <?php echo esc_attr( get_theme_mod('header_font', 'Raleway, sans-serif' ) ); ?>;
         }
         
-        ul.athena-nav > li.menu-item a{
+        ul.thoroughbreds-nav > li.menu-item a{
             font-size: <?php echo esc_attr( get_theme_mod('menu_font_size', '14px' ) ); ?>;
         }
         
@@ -258,10 +258,10 @@ function athena_custom_css() {
     <?php
 }
 
-add_action('wp_head', 'athena_custom_css');
+add_action('wp_head', 'thoroughbreds_custom_css');
 
 
-function athena_custom_js() { 
+function thoroughbreds_custom_js() { 
     
     
     if( get_theme_mod( 'blog_style', 'tiles' ) === 'tiles' ) :
@@ -269,9 +269,9 @@ function athena_custom_js() {
     ?>
     <script type="text/javascript">
     jQuery(document).ready( function($) {
-        $('.athena-blog-content').imagesLoaded(function () {
-            $('.athena-blog-content').masonry({
-                itemSelector: '.athena-blog-post',
+        $('.thoroughbreds-blog-content').imagesLoaded(function () {
+            $('.thoroughbreds-blog-content').masonry({
+                itemSelector: '.thoroughbreds-blog-post',
                 gutter: 0,
                 transitionDuration: 0,
             }).masonry('reloadItems');
@@ -279,39 +279,39 @@ function athena_custom_js() {
     });
     </script>
     <?php else : ?>
-    <style>.athena-blog-post{ width: 100% !important }</style>
+    <style>.thoroughbreds-blog-post{ width: 100% !important }</style>
     <?php 
     endif;
 }
 
-add_action('wp_head', 'athena_custom_js');
+add_action('wp_head', 'thoroughbreds_custom_js');
 
 
-function athena_render_homepage() { ?>
+function thoroughbreds_render_homepage() { ?>
 
-    <div id="athena-jumbotron">
+    <div id="thoroughbreds-jumbotron">
 
-        <div id="athena-slider" class="hero">
+        <div id="thoroughbreds-slider" class="hero">
 
-            <div id="slide1" data-thumb="<?php echo esc_url( get_theme_mod('featured_image1', get_template_directory_uri() . '/inc/images/athena.jpg' ) ); ?>" data-src="<?php echo esc_url( get_theme_mod( 'featured_image1', get_template_directory_uri() . '/inc/images/athena.jpg' ) ); ?>">
+            <div id="slide1" data-thumb="<?php echo esc_url( get_theme_mod('featured_image1', get_template_directory_uri() . '/inc/images/thoroughbreds.jpg' ) ); ?>" data-src="<?php echo esc_url( get_theme_mod( 'featured_image1', get_template_directory_uri() . '/inc/images/thoroughbreds.jpg' ) ); ?>">
 
                 <div class="overlay">
                     <div class="row">
                         
                         <div class="col-sm-6 parallax">
-                            <h2 class="header-text animated slideInDown slide1-header"><?php echo esc_attr( get_theme_mod( 'featured_image1_title', __( 'Welcome to Athena', 'athena' )  ) ); ?></h2>
+                            <h2 class="header-text animated slideInDown slide1-header"><?php echo esc_attr( get_theme_mod( 'featured_image1_title', __( 'Welcome to thoroughbreds', 'thoroughbreds' )  ) ); ?></h2>
                             
                             <?php if( get_theme_mod( 'slide1_button1_text', 'True' ) ) : ?>
                             <a href="<?php echo esc_url( get_theme_mod( 'slide1_button1_url', '#') ); ?>"
-                               class="athena-button primary large animated flipInX slide1_button1 delay3">
-                                <?php echo esc_attr( get_theme_mod( 'slide1_button1_text', __( 'View Features', 'athena' )  ) ); ?>
+                               class="thoroughbreds-button primary large animated flipInX slide1_button1 delay3">
+                                <?php echo esc_attr( get_theme_mod( 'slide1_button1_text', __( 'View Features', 'thoroughbreds' )  ) ); ?>
                             </a>
                             <?php endif; ?>
 
                             <?php if( get_theme_mod( 'slide1_button2_text', 'True' ) ) : ?>
                             <a href="<?php echo esc_url( get_theme_mod( 'slide1_button2_url', '#') ); ?>"
-                               class="athena-button default large animated flipInX slide1_button2 delay3">
-                                <?php echo esc_attr( get_theme_mod( 'slide1_button2_text', __( 'Learn More', 'athena' )  ) ); ?>
+                               class="thoroughbreds-button default large animated flipInX slide1_button2 delay3">
+                                <?php echo esc_attr( get_theme_mod( 'slide1_button2_text', __( 'Learn More', 'thoroughbreds' )  ) ); ?>
                             </a>
                             <?php endif; ?>
                             
@@ -325,26 +325,26 @@ function athena_render_homepage() { ?>
 
             </div>                
 
-            <div id="slide2" data-thumb="<?php echo esc_url(get_theme_mod('featured_image2', get_template_directory_uri() . '/inc/images/athena2.jpg')); ?>" data-src="<?php echo esc_url(get_theme_mod('featured_image2', get_template_directory_uri() . '/inc/images/athena2.jpg')); ?>">
+            <div id="slide2" data-thumb="<?php echo esc_url(get_theme_mod('featured_image2', get_template_directory_uri() . '/inc/images/thoroughbreds2.jpg')); ?>" data-src="<?php echo esc_url(get_theme_mod('featured_image2', get_template_directory_uri() . '/inc/images/thoroughbreds2.jpg')); ?>">
 
                 <div class="overlay">
                     
                     <div class="row">
                         
                         <div class="col-sm-6 parallax">
-                            <h2 class="header-text animated slideInDown slide2-header"><?php echo esc_attr( get_theme_mod( 'featured_image2_title', __( 'Welcome to Athena', 'athena' )  ) ); ?></h2>
+                            <h2 class="header-text animated slideInDown slide2-header"><?php echo esc_attr( get_theme_mod( 'featured_image2_title', __( 'Welcome to thoroughbreds', 'thoroughbreds' )  ) ); ?></h2>
                             
                             <?php if( get_theme_mod( 'slide2_button1_text', 'True' ) ) : ?>
                             <a href="<?php echo esc_url( get_theme_mod( 'slide2_button1_url', '#') ); ?>"
-                               class="athena-button primary large animated flipInX slide2_button1 delay3">
-                                <?php echo esc_attr( get_theme_mod( 'slide2_button1_text', __( 'View Features', 'athena' )  ) ); ?>
+                               class="thoroughbreds-button primary large animated flipInX slide2_button1 delay3">
+                                <?php echo esc_attr( get_theme_mod( 'slide2_button1_text', __( 'View Features', 'thoroughbreds' )  ) ); ?>
                             </a>
                             <?php endif; ?>
 
                             <?php if( get_theme_mod( 'slide2_button2_text', 'True' ) ) : ?>
                             <a href="<?php echo esc_url( get_theme_mod( 'slide2_button2_url', '#') ); ?>"
-                               class="athena-button default large animated flipInX slide2_button2 delay3">
-                                <?php echo esc_attr( get_theme_mod( 'slide2_button2_text', __( 'Learn More', 'athena' )  ) ); ?>
+                               class="thoroughbreds-button default large animated flipInX slide2_button2 delay3">
+                                <?php echo esc_attr( get_theme_mod( 'slide2_button2_text', __( 'Learn More', 'thoroughbreds' )  ) ); ?>
                             </a>
                             <?php endif; ?>
                             
@@ -361,7 +361,7 @@ function athena_render_homepage() { ?>
         </div>
         
         <?php if( get_theme_mod( 'overlay_bool', 'on' ) == 'on' ) : ?>
-        <div id="athena-overlay-trigger">
+        <div id="thoroughbreds-overlay-trigger">
 
             <div class="overlay-widget">
                 <div class="row">
@@ -388,19 +388,19 @@ function athena_render_homepage() { ?>
 
     <?php if( get_theme_mod('callout_bool', 'on' ) == 'on' ) : ?>
 
-    <div id="athena-featured">
+    <div id="thoroughbreds-featured">
 
         <div class="col-sm-4 featured-box featured-box1" data-target="<?php echo esc_url( get_theme_mod( 'callout1_href', '#' ) ); ?>">
 
             <div class="reveal animated fadeInUp reveal">
 
-                <div class="athena-icon">
-                    <span class="<?php echo esc_attr(get_theme_mod('callout1_icon', __('fa fa-laptop', 'athena'))); ?>"></span>
+                <div class="thoroughbreds-icon">
+                    <span class="<?php echo esc_attr(get_theme_mod('callout1_icon', __('fa fa-laptop', 'thoroughbreds'))); ?>"></span>
                 </div>
 
-                <h3 class="athena-title"><?php echo esc_attr(get_theme_mod('callout1_title', __('Responsive', 'athena'))); ?></h3>
+                <h3 class="thoroughbreds-title"><?php echo esc_attr(get_theme_mod('callout1_title', __('Responsive', 'thoroughbreds'))); ?></h3>
 
-                <p class="athena-desc"><?php echo esc_attr(get_theme_mod('callout1_text', __('Athena looks amazing on desktop and mobile devices.', 'athena'))); ?></p>
+                <p class="thoroughbreds-desc"><?php echo esc_attr(get_theme_mod('callout1_text', __('thoroughbreds looks amazing on desktop and mobile devices.', 'thoroughbreds'))); ?></p>
 
             </div>
 
@@ -410,13 +410,13 @@ function athena_render_homepage() { ?>
 
             <div class="reveal animated fadeInUp delay1">
 
-                <div class="athena-icon">
-                    <span class="<?php echo esc_attr(get_theme_mod('callout2_icon', __('fa fa-magic', 'athena'))); ?>"></span>
+                <div class="thoroughbreds-icon">
+                    <span class="<?php echo esc_attr(get_theme_mod('callout2_icon', __('fa fa-magic', 'thoroughbreds'))); ?>"></span>
                 </div>
 
-                <h3 class="athena-title"><?php echo esc_attr(get_theme_mod('callout2_title', __('Customizable', 'athena'))); ?></h3>
+                <h3 class="thoroughbreds-title"><?php echo esc_attr(get_theme_mod('callout2_title', __('Customizable', 'thoroughbreds'))); ?></h3>
 
-                <p class="athena-desc"><?php echo esc_attr(get_theme_mod('callout2_text', __('Athena is easy to use and customize without having to touch code', 'athena'))); ?></p>
+                <p class="thoroughbreds-desc"><?php echo esc_attr(get_theme_mod('callout2_text', __('thoroughbreds is easy to use and customize without having to touch code', 'thoroughbreds'))); ?></p>
 
             </div>
 
@@ -426,13 +426,13 @@ function athena_render_homepage() { ?>
 
             <div class="reveal animated fadeInUp delay2">
 
-                <div class="athena-icon">
-                    <span class="<?php echo esc_attr(get_theme_mod('callout3_icon', __('fa fa-shopping-cart', 'athena'))); ?>"></span>
+                <div class="thoroughbreds-icon">
+                    <span class="<?php echo esc_attr(get_theme_mod('callout3_icon', __('fa fa-shopping-cart', 'thoroughbreds'))); ?>"></span>
                 </div>
 
-                <h3 class="athena-title"><?php echo esc_attr(get_theme_mod('callout3_title', __('WooCommerce', 'athena'))); ?></h3>
+                <h3 class="thoroughbreds-title"><?php echo esc_attr(get_theme_mod('callout3_title', __('WooCommerce', 'thoroughbreds'))); ?></h3>
 
-                <p class="athena-desc"><?php echo esc_attr(get_theme_mod('callout3_text', __('Athena supports WooCommerce to build an online shopping site', 'athena'))); ?></p>
+                <p class="thoroughbreds-desc"><?php echo esc_attr(get_theme_mod('callout3_text', __('thoroughbreds supports WooCommerce to build an online shopping site', 'thoroughbreds'))); ?></p>
 
             </div>
         </div>
@@ -448,12 +448,12 @@ function athena_render_homepage() { ?>
     <?php
 }
 
-add_action( 'athena_homepage', 'athena_render_homepage' );
+add_action( 'thoroughbreds_homepage', 'thoroughbreds_render_homepage' );
 
 
-function athena_render_footer(){ ?>
+function thoroughbreds_render_footer(){ ?>
     
-    <div class="athena-footer" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_attr( get_theme_mod('footer_background_image', get_template_directory_uri() . '/inc/images/footer.jpg' ) ); ?>">
+    <div class="thoroughbreds-footer" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_attr( get_theme_mod('footer_background_image', get_template_directory_uri() . '/inc/images/footer.jpg' ) ); ?>">
         <div>
             <div class="row">
                 <?php get_sidebar('footer'); ?>
@@ -469,46 +469,46 @@ function athena_render_footer(){ ?>
         
         <div class="row">
             
-            <div class="athena-copyright">
-                <?php echo esc_attr( get_theme_mod( 'copyright_text', __( 'Copyright Company Name 2015', 'athena' ) ) ); ?>
+            <div class="thoroughbreds-copyright">
+                <?php echo esc_attr( get_theme_mod( 'copyright_text', __( 'Copyright Company Name 2015', 'thoroughbreds' ) ) ); ?>
             </div>
             
             <div id="authica-social">
                 
                 <?php if( get_theme_mod( 'facebook_url', 'http://facebook.com' ) != '' ) : ?>
-                <a href="<?php echo esc_url( get_theme_mod( 'facebook_url', 'http://facebook.com' ) ); ?>" target="_BLANK" class="athena-facebook">
+                <a href="<?php echo esc_url( get_theme_mod( 'facebook_url', 'http://facebook.com' ) ); ?>" target="_BLANK" class="thoroughbreds-facebook">
                     <span class="fa fa-facebook"></span>
                 </a>
                 <?php endif; ?>
                 
                 
                 <?php if( get_theme_mod( 'gplus_url', 'http://gplus.com' ) != '' ) : ?>
-                <a href="<?php echo esc_url( get_theme_mod( 'gplus_url', 'http://gplus.com' ) ); ?>" target="_BLANK" class="athena-gplus">
+                <a href="<?php echo esc_url( get_theme_mod( 'gplus_url', 'http://gplus.com' ) ); ?>" target="_BLANK" class="thoroughbreds-gplus">
                     <span class="fa fa-google-plus"></span>
                 </a>
                 <?php endif; ?>
                 
                 <?php if( get_theme_mod( 'instagram_url', 'http://instagram.com' ) != '' ) : ?>
-                <a href="<?php echo esc_url( get_theme_mod( 'instagram_url', 'http://instagram.com' ) ); ?>" target="_BLANK" class="athena-instagram">
+                <a href="<?php echo esc_url( get_theme_mod( 'instagram_url', 'http://instagram.com' ) ); ?>" target="_BLANK" class="thoroughbreds-instagram">
                     <span class="fa fa-instagram"></span>
                 </a>
                 <?php endif; ?>
                 
                 <?php if( get_theme_mod( 'linkedin_url', 'http://linkedin.com' ) != '' ) : ?>
-                <a href="<?php echo esc_url( get_theme_mod( 'linkedin_url', 'http://linkedin.com' ) ); ?>" target="_BLANK" class="athena-linkedin">
+                <a href="<?php echo esc_url( get_theme_mod( 'linkedin_url', 'http://linkedin.com' ) ); ?>" target="_BLANK" class="thoroughbreds-linkedin">
                     <span class="fa fa-linkedin"></span>
                 </a>
                 <?php endif; ?>
                 
                 
                 <?php if( get_theme_mod( 'pinterest_url', 'http://pinterest.com' ) != '' ) : ?>
-                <a href="<?php echo esc_url( get_theme_mod( 'pinterest_url', 'http://pinterest.com' ) ); ?>" target="_BLANK" class="athena-pinterest">
+                <a href="<?php echo esc_url( get_theme_mod( 'pinterest_url', 'http://pinterest.com' ) ); ?>" target="_BLANK" class="thoroughbreds-pinterest">
                     <span class="fa fa-pinterest"></span>
                 </a>
                 <?php endif; ?>
                 
                 <?php if( get_theme_mod( 'twitter_url', 'http://twitter.com' ) ) : ?>
-                <a href="<?php echo esc_url( get_theme_mod( 'twitter_url', 'http://twitter.com' ) ); ?>" target="_BLANK" class="athena-twitter">
+                <a href="<?php echo esc_url( get_theme_mod( 'twitter_url', 'http://twitter.com' ) ); ?>" target="_BLANK" class="thoroughbreds-twitter">
                     <span class="fa fa-twitter"></span>
                 </a>
                 <?php endif; ?>
@@ -518,13 +518,13 @@ function athena_render_footer(){ ?>
             <?php $menu = wp_nav_menu( array ( 
                 'theme_location'    => 'footer', 
                 'menu_id'           => 'footer-menu', 
-                'menu_class'        => 'athena-footer-nav' ,
+                'menu_class'        => 'thoroughbreds-footer-nav' ,
 
                 ) ); ?>
             <br>
 
             <a href="https://smartcatdesign.net" rel="designer" style="display: block !important" class="rel">
-                <?php _e( 'Design by' , 'athena' ); echo ' Smart' . 'cat'; ?>
+                <?php _e( 'Design by' , 'thoroughbreds' ); echo ' Smart' . 'cat'; ?>
                 <img src="<?php echo get_template_directory_uri() . '/inc/images/cat_logo_mini.png'?>"/>
             </a>
             
@@ -541,15 +541,15 @@ function athena_render_footer(){ ?>
     
     
 <?php }
-add_action( 'athena_footer', 'athena_render_footer' );
+add_action( 'thoroughbreds_footer', 'thoroughbreds_render_footer' );
 
 
 
-class athena_recent_posts_widget extends WP_Widget {
+class thoroughbreds_recent_posts_widget extends WP_Widget {
 
     function __construct() {
         parent::__construct(
-                'athena_recent_posts_widget', __('Athena Recent Articles', 'athena'), array('description' => __('Use this widget to display the Athena Recent Posts.', 'athena'),)
+                'thoroughbreds_recent_posts_widget', __('thoroughbreds Recent Articles', 'thoroughbreds'), array('description' => __('Use this widget to display the thoroughbreds Recent Posts.', 'thoroughbreds'),)
         );
     }
 
@@ -569,7 +569,7 @@ class athena_recent_posts_widget extends WP_Widget {
         if (!empty($title))
             echo $args['before_title'] . $title . $args['after_title'];
         
-        echo athena_recent_posts();
+        echo thoroughbreds_recent_posts();
 
     }
 
@@ -578,12 +578,12 @@ class athena_recent_posts_widget extends WP_Widget {
         if (isset($instance['title'])) {
             $title = $instance['title'];
         } else {
-            $title = __('Recent Articles', 'athena');
+            $title = __('Recent Articles', 'thoroughbreds');
         }
         // Widget admin form
         ?>
         <p>
-            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'athena'); ?></label>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'thoroughbreds'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />             
         </p>
         <?php
@@ -598,21 +598,21 @@ class athena_recent_posts_widget extends WP_Widget {
 
 }
 
-add_action('widgets_init', 'athena_load_widget');
-function athena_load_widget() {
-    register_widget('athena_recent_posts_widget');
+add_action('widgets_init', 'thoroughbreds_load_widget');
+function thoroughbreds_load_widget() {
+    register_widget('thoroughbreds_recent_posts_widget');
 }
 
-function athena_recent_posts() {
+function thoroughbreds_recent_posts() {
     $args = array(
         'numberposts' => '6',
         'post_status' => 'publish',
     );
     ?>
-    <div id="athena_recent_posts">
+    <div id="thoroughbreds_recent_posts">
         <?php $recent_posts = wp_get_recent_posts($args);
         foreach ($recent_posts as $post) { ?>
-            <div class="col-sm-4 athena-single-post">
+            <div class="col-sm-4 thoroughbreds-single-post">
                 <div>
                     <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post['ID'])); ?>
                     <img src="<?php echo $url; ?> " title="<?php echo $post['post_title']; ?>"/>

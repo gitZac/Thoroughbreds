@@ -32,7 +32,7 @@ import autoprefixer from 'gulp-autoprefixer';
 
 const paths = {
     styles: {
-        src:['./src/scss/bundle.scss'],
+        src:['./src/assets/scss/bundle.scss'],
         dest:['./dist/assets/css']
     },
 
@@ -110,30 +110,30 @@ export const styles = (done) => {
  */
 
 export const scripts = (done) => {
-    return gulp.src(paths.scripts.src)
-        .pipe(named())
-        .pipe(webpack({
-            module: {
-                rules:[
-                    {
-                        test: /\.js$/,
-                        use: {
-                            loader: 'babel-loader',
-                            options: {
-                                presets: ['babel-preset-env']
-                            }
-                        }
-                    }
-                ]
-            }, 
-            output: {
-                filename: '[name].js'
-            },
-            externals:{
-                jquery:'jQuery'
-            }
-        }))
-        .pipe(gulp.dest(paths.scripts.dest)) 
+    // return gulp.src(paths.scripts.src)
+    //     .pipe(named())
+    //     .pipe(webpack({
+    //         module: {
+    //             rules:[
+    //                 {
+    //                     test: /\.js$/,
+    //                     use: {
+    //                         loader: 'babel-loader',
+    //                         options: {
+    //                             presets: ['babel-preset-env']
+    //                         }
+    //                     }
+    //                 }
+    //             ]
+    //         }, 
+    //         output: {
+    //             filename: '[name].js'
+    //         },
+    //         externals:{
+    //             jquery:'jQuery'
+    //         }
+    //     }))
+    //     .pipe(gulp.dest(paths.scripts.dest)) 
     
         done();
 }
@@ -146,7 +146,7 @@ export const scripts = (done) => {
  */
 
 export const watch = () => {
-    gulp.watch('./sass/**/*.scss', styles);
+    gulp.watch('./src/assets/scss/**/*.scss', styles);
     gulp.watch('./js/**/*.js', gulp.series(scripts, reload));
     gulp.watch('**/*.php', reload);
 }

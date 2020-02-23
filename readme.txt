@@ -1,4 +1,4 @@
-=== Athena ===
+=== thoroughbreds ===
 
 Contributors: smartcat
 Tags: one-column,two-columns,three-columns,left-sidebar,right-sidebar,grid-layout,custom-colors,custom-logo,featured-images,footer-widgets,full-width-template,theme-options,translation-ready,portfolio,e-commerce,photography
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Athena is a feature-loaded, user-friendly, fully responsive, Parallax modern WordPress theme built with care and SEO in mind. It is a multi-purpose theme with a design that can be used by a business, restaurant, freelancers, photographers, bloggers, musicians and creative agencies. Athena features a full width frontpage slider, animated callouts with over 600 icons to choose from. The blog is an attractive masonry grid. It comes with many color options, left and right sidebars, 6 widget areas, primary and footer menus, mobile responsive menu and links to your social media sites . Athena allows you to fully customize your site without having to work with code. Athena also features a live customizer, allowing you to change settings and preview them live.
+thoroughbreds is a feature-loaded, user-friendly, fully responsive, Parallax modern WordPress theme built with care and SEO in mind. It is a multi-purpose theme with a design that can be used by a business, restaurant, freelancers, photographers, bloggers, musicians and creative agencies. thoroughbreds features a full width frontpage slider, animated callouts with over 600 icons to choose from. The blog is an attractive masonry grid. It comes with many color options, left and right sidebars, 6 widget areas, primary and footer menus, mobile responsive menu and links to your social media sites . thoroughbreds allows you to fully customize your site without having to work with code. thoroughbreds also features a live customizer, allowing you to change settings and preview them live.
 
 == Installation ==
 	
@@ -23,11 +23,11 @@ Athena is a feature-loaded, user-friendly, fully responsive, Parallax modern Wor
 
 = Does this theme support any plugins? =
 
-Athena includes support for Infinite Scroll in Jetpack, Our Team Showcase and WooCommerce.
+thoroughbreds includes support for Infinite Scroll in Jetpack, Our Team Showcase and WooCommerce.
 
-= How many menu items does Athena support ?
+= How many menu items does thoroughbreds support ?
 
-Athena supports an unlimited number of menu items, it has been optimized for top-level menus, sub menus and sub-sub menus.
+thoroughbreds supports an unlimited number of menu items, it has been optimized for top-level menus, sub menus and sub-sub menus.
 As a recommendation, try to maintain the number of top menu items under 8 or 9 items, because if you add more,
 the menu items will drop to a new line and will not look as good as intended.
 

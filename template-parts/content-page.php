@@ -4,12 +4,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Athena
+ * @package thoroughbreds
  */
 ?>
 
 <?php if (get_post_thumbnail_id($post->ID)) : ?>
-    <div id="athena-page-jumbotron" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>">
+    <div id="thoroughbreds-page-jumbotron" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>">
 
         <header class="entry-header">
             <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
@@ -22,7 +22,7 @@
     
     <?php get_sidebar('left'); ?>
     
-    <div class="col-sm-<?php echo athena_main_width(); ?>">
+    <div class="col-sm-<?php echo thoroughbreds_main_width(); ?>">
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -42,7 +42,7 @@
                 <?php the_content(); ?>
                 <?php
                 wp_link_pages(array(
-                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'athena'),
+                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'thoroughbreds'),
                     'after' => '</div>',
                 ));
                 ?>
@@ -53,7 +53,7 @@
                 edit_post_link(
                         sprintf(
                                 /* translators: %s: Name of current post */
-                                esc_html__('Edit %s', 'athena'), the_title('<span class="screen-reader-text">"', '"</span>', false)
+                                esc_html__('Edit %s', 'thoroughbreds'), the_title('<span class="screen-reader-text">"', '"</span>', false)
                         ), '<span class="edit-link">', '</span>'
                 );
                 ?>
