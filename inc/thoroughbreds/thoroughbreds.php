@@ -45,7 +45,7 @@ function thoroughbreds_scripts() {
     wp_enqueue_style('thoroughbreds-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-bootstrap-theme', get_template_directory_uri() . '/inc/css/bootstrap-theme.min.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-fontawesome', get_template_directory_uri() . '/inc/css/font-awesome.css', array(), thoroughbreds_VERSION);
-    wp_enqueue_style('thoroughbreds-main-style', get_template_directory_uri() . '/inc/css/style.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-main-style', get_template_directory_uri() . '/dist/assets/css/bundle.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-camera-style', get_template_directory_uri() . '/inc/css/camera.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-animations', get_template_directory_uri() . '/inc/css/animate.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-slicknav', get_template_directory_uri() . '/inc/css/slicknav.min.css', array(), thoroughbreds_VERSION);
