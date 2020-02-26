@@ -4,7 +4,27 @@
 
     &--video{
         &--item{
-            padding: 2px 0 0 2px;
+            padding: 8px 0 0 8px;
+        }
+
+        &--content{
+            padding:1rem 0;
+
+        }
+
+        &--title{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: bold;
+
+            line-height: 1.3em;
+
+        }
+
+        &--description{
+            font-size: 16px;
+            font-style: normal;
+            line-height: 1.3em;
         }
 
         &--item--inner{
@@ -27,7 +47,6 @@
 
         &--item--inner-vi-ratio{
             padding-bottom: 75%;
-
         }
     }
 
@@ -87,7 +106,7 @@
             font-style: normal;
             line-height: 2em;
             letter-spacing: 0.5px;
-            color: #c29c5e;
+            color: $color-primary;
             text-transform: uppercase;
         }
     }

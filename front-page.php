@@ -160,34 +160,59 @@ get_header();
                 <div class="highlights--video">
                     <div class="row">
 
-                        <div class="col-sm padding-none">
-
+                        <div class="col-sm-6 padding-none">
 
                             <div class="highlights--video--item">
+
                                 <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe src="https://www.youtube.com/embed/dDDMPZIPlP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_sB3qnT4biw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                           
                                 </div>
+                                <div class="highlights--video--content">
+                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
+                                    <p class="highlights--video--description">Written by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde Clydesdale</p>
+                                </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
+
                         </div> <!-- /.col-sm-->
-
-                        <div class="col-sm padding-none">
-
+                        <div class="col-sm-6 padding-none">
 
                             <div class="highlights--video--item">
+
                                 <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe src="https://www.youtube.com/embed/dDDMPZIPlP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/50u5u40kFZM?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
+                                <div class="highlights--video--content">
+                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
+                                    <p class="highlights--video--description">Written by Clyde Clydesdale</p>
+                                </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
+
                         </div> <!-- /.col-sm-->
-
-                        <div class="col-sm padding-none">
-
-
+                        <div class="col-sm-6 padding-none">
                             <div class="highlights--video--item">
                                 <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe src="https://www.youtube.com/embed/dDDMPZIPlP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/VKBmrHGpVPI?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
+                                <div class="highlights--video--content">
+                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
+                                    <p class="highlights--video--description">Written by Clyde Clydesdale</p>
+                                </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
+
+                        </div> <!-- /.col-sm-->
+                        <div class="col-sm-6 padding-none">
+
+                            <div class="highlights--video--item">
+
+                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
+                                    <iframe src="https://www.youtube.com/embed/5qEMuDzRRqE?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
+                                </div>
+                                <div class="highlights--video--content">
+                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
+                                    <p class="highlights--video--description">Written by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde Clydesdale</p>
+                                </div> <!-- /.card--content -->
+                            </div> <!-- /.highlights--list-item-->
+
                         </div> <!-- /.col-sm-->
 
                     </div> <!-- /.row--full-width-->
