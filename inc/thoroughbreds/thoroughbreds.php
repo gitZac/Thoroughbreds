@@ -43,6 +43,7 @@ function thoroughbreds_scripts() {
         wp_enqueue_style('thoroughbreds-font-lobster', '//fonts.googleapis.com/css?family=Lobster+Two:400,700', array(), thoroughbreds_VERSION);
 
     wp_enqueue_style('thoroughbreds-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.css', array(), thoroughbreds_VERSION);
+    wp_enqueue_style('thoroughbreds-bootstrap-grid', get_template_directory_uri() . '/inc/css/bootstrap-grid.min.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-bootstrap-theme', get_template_directory_uri() . '/inc/css/bootstrap-theme.min.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-fontawesome', get_template_directory_uri() . '/inc/css/font-awesome.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-main-style', get_template_directory_uri() . '/dist/assets/css/bundle.css', array(), thoroughbreds_VERSION);

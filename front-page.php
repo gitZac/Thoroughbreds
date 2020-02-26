@@ -52,35 +52,150 @@ get_header();
                 </div> <!-- /.row -->
             </section> <!-- /.Callouts -->
         </div> <!-- /.container-fluid-->
-        <div class="">
+        <div class="container-fluid padding-none">
             <div class="section highlights">
                 <div class="row">
                     <div class="section-title">
                         <h2 class="section__title--title">Hire Us!</h2>
                     </div><!-- /.section-title-->
                 </div>
-                <div class="row row--full-width">
-                </div>
                 <div class="highlights--list">
-                    <div class="highlights--list--item">
-                        <a href="#" class="highlights--card">
-                            <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/west1.jpg);" class="highlights--card--image"></div>
-                            <div class="highlights--card--shade"></div>
-                            <div class="highlights--card--content">
-                                <strong class="highlights--card--title">Chorus Show Package</strong>
-                                <em class="highlights--card--subtitle">Perfect for events, galas and services.</em>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
+                    <div class="row row--full-width ">
+                        <div class="col-sm-4 padding-none">
+                            <div class="highlights--list--item">
+                                <a href="#" class="highlights--card">
+                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/thethoroughbreds.jpg);" class="highlights--card--image"></div>
+                                    <div class="highlights--card--shade"></div>
+                                    <div class="highlights--card--content">
+                                        <strong class="highlights--card--title">Chorus Show Package</strong>
+                                        <em class="highlights--card--subtitle">Perfect for events, galas and services.</em>
+                                    </div>
+                                </a>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+                        <div class="col-sm-4 padding-none">
+                            <div class="highlights--list--item">
+                                <a href="#" class="highlights--card">
+                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/not-interstate-rivals.jpg);" class="highlights--card--image"></div>
+                                    <div class="highlights--card--shade"></div>
+                                    <div class="highlights--card--content">
+                                        <strong class="highlights--card--title">Hire a Quartet!</strong>
+                                        <em class="highlights--card--subtitle">Have one of our quartets sing for your party, anniversary, or to just embarrass a friend!</em>
+                                    </div>
+                                </a>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+                        <div class="col-sm-4 padding-none">
+                            <div class="highlights--list--item">
+                                <a href="#" class="highlights--card">
+                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/singer-540771_1280.jpg);" class="highlights--card--image"></div>
+                                    <div class="highlights--card--shade"></div>
+                                    <div class="highlights--card--content">
+                                        <strong class="highlights--card--title">Singing Telegrams</strong>
+                                        <em class="highlights--card--subtitle">We'll show up anywhere and sing for anyone!</em>
+                                    </div>
+                                </a>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+                        <div class="col-sm-4 padding-none">
+                            <div class="highlights--list--item">
+                                <a href="#" class="highlights--card">
+                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/jimmillerhall.png);" class="highlights--card--image"></div>
+                                    <div class="highlights--card--shade"></div>
+                                    <div class="highlights--card--content">
+                                        <strong class="highlights--card--title">Rent Our Venue</strong>
+                                        <em class="highlights--card--subtitle">The Jim Miller Hall is Great for Wedding Receptions, banquets, parties and everything in between!</em>
+                                    </div>
+                                </a>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+                    </div> <!-- /.row--full-width-->
+                </div> <!-- /.highlights--list-->
             </div><!-- /.section.highlights-->
         </div><!-- /.container-fluid-->
+        <div class="container-fluid bg-gray-light">
+            <section class="section callouts ">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title">
+                            <h2 class="section__title--title">Join the Thoroughbreds!</h2>
+                        </div><!-- /.section-title-->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="callouts--card">
+                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/mainstreet-1.jpg);">
+                            </div>
+                            <div class="callouts--card--content">
+                            <h4 class="callouts--card--title">Open Rehearsals</h4>
+                            <p class="callouts--card--description">We rehearse every Monday starting at 7:00 PM. Anyone is welcome to swing by the Jim Miller Hall and sing with us!</p>
+                            <div class="callouts--card--link">
+                                <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Learn More</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="callouts--card">
+                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/drew-1.jpg);">
+                            </div>
+                            <div class="callouts--card--content">
+                                <h4 class="callouts--card--title">Membership Info</h4>
+                                <p class="callouts--card--description">Learn more about becoming a member of the Thoroughbreds, auditions, competitions and more.</p>
+                                <div class="callouts--card--link">
+                                    <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
+                                </div> <!-- /.card--link -->
+                            </div> <!-- /.card--content -->
+                        </div> <!-- /.callouts--card -->
+                    </div> <!-- /.col-sm6 -->
+                </div> <!-- /.row -->
+            </section> <!-- /.Callouts -->
+        </div> <!-- /.container-fluid-->
+        <div class="container-fluid padding-none">
+            <div class="section highlights">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 class="section__title--title">Our Latest Tags</h2>
+                    </div><!-- /.section-title-->
+                </div>
+                <div class="highlights--video">
+                    <div class="row">
+
+                        <div class="col-sm padding-none">
 
 
+                            <div class="highlights--video--item">
+                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
+                                    <iframe src="https://www.youtube.com/embed/dDDMPZIPlP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+
+                        <div class="col-sm padding-none">
+
+
+                            <div class="highlights--video--item">
+                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
+                                    <iframe src="https://www.youtube.com/embed/dDDMPZIPlP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+
+                        <div class="col-sm padding-none">
+
+
+                            <div class="highlights--video--item">
+                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
+                                    <iframe src="https://www.youtube.com/embed/dDDMPZIPlP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div> <!-- /.highlights--list-item-->
+                        </div> <!-- /.col-sm-->
+
+                    </div> <!-- /.row--full-width-->
+
+                </div> <!-- /.highlights--video-->
+            </div><!-- /.section.highlights-->
+        </div><!-- /.container-fluid-->
     </main><!-- #main -->
 </div><!-- #primary -->
-
 
 <?php get_footer(); ?>        
