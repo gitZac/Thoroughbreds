@@ -22,14 +22,13 @@ get_header();
                         <h1 class="">We're Going to Hollywood!</h1>
                     </div>
                     <div class="hero__subtitle">
-                        Book your tickets now!
+                        Book your tickets
                     </div>
                     <div class="hero__cta">
                         <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get Tickets</a>
                     </div>
                 </div>
             </section>
-
         </div><!-- /.container-fluid-->
 
         <div class="container-fluid bg-gray-light">
