@@ -11,7 +11,26 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <?php do_action('thoroughbreds_homepage'); ?>
+        <?php //do_action('thoroughbreds_homepage'); ?>
+
+        <div class="container-fluid">
+            <section class="hero">
+                <div class="hero__image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/centralstock1-3.jpg);"></div>
+                <div class="hero__shade"></div>
+                <div class="hero__content">
+                    <div class="hero__title">
+                        <h1 class="">We're Going to Hollywood!</h1>
+                    </div>
+                    <div class="hero__subtitle">
+                        Book your tickets now!
+                    </div>
+                    <div class="hero__cta">
+                        <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get Tickets</a>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- /.container-fluid-->
 
         <div class="container-fluid bg-gray-light">
             <section class="section callouts ">
@@ -193,7 +212,7 @@ get_header();
                                 <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
                                     <iframe src="https://www.youtube.com/embed/VKBmrHGpVPI?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <div class="highlights--video--content">
+                                <div class="highlights-ideo--content">
                                     <h4 class="highlights--video--title">My Old Kentucky Home</h4>
                                     <p class="highlights--video--description">Written by Clyde Clydesdale</p>
                                 </div> <!-- /.card--content -->

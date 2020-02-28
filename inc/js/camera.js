@@ -4,7 +4,7 @@
 ;(function($){$.fn.camera = function(opts, callback) {
 	
 	var defaults = {
-		alignment			: 'center', //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
+		alignment			: 'topCenter', //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
 		
 		autoAdvance			: true,	//true, false
 		
@@ -79,9 +79,9 @@
 		
 		thumbnails			: false,
 		
-		time				: 7000,	//milliseconds between the end of the sliding effect and the start of the nex one
+		time				: 10000,	//milliseconds between the end of the sliding effect and the start of the nex one
 		
-		transPeriod			: 1500,	//lenght of the sliding effect in milliseconds
+		transPeriod			: 1000,	//lenght of the sliding effect in milliseconds
 		
 ////////callbacks
 

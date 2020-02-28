@@ -412,7 +412,8 @@ ul.thoroughbreds-nav > li.menu-item.menu-item-has-children > a:after{
 
 #thoroughbreds-jumbotron .overlay{
     position: absolute;
-    top: 30%;
+    top: 70%;
+    left:-10%;
     width: 100%;
 }
 
@@ -422,8 +423,22 @@ ul.thoroughbreds-nav > li.menu-item.menu-item-has-children > a:after{
 }
 
 #thoroughbreds-jumbotron h2.header-text{
-    font-size: 46px;
+    font-size: 3.6rem;
     color: #fff;
+    background:#111;
+    text-transform: uppercase;
+    padding:1rem;
+
+}
+
+#thoroughbreds-jumbotron h2.header-text::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    background: #000;
 }
 
 #thoroughbreds-jumbotron .slider-bottom{
