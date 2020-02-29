@@ -19,10 +19,10 @@ get_header();
                 <div class="hero__shade"></div>
                 <div class="hero__content">
                     <div class="hero__title">
-                        <h1 class="">We're Going to Hollywood!</h1>
+                        <h1 class="">An Evening of Barbershop</h1>
                     </div>
                     <div class="hero__subtitle">
-                        Book your tickets
+                        September 12 - 24th
                     </div>
                     <div class="hero__cta">
                         <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get Tickets</a>
@@ -98,7 +98,7 @@ get_header();
                                     <div class="highlights--card--shade"></div>
                                     <div class="highlights--card--content">
                                         <strong class="highlights--card--title">Hire a Quartet!</strong>
-                                        <em class="highlights--card--subtitle">Have one of our quartets sing for your party, anniversary, or to just embarrass a friend!</em>
+                                        <em class="highlights--card--subtitle">It's not a party without a quartet.</em>
                                     </div>
                                 </a>
                             </div> <!-- /.highlights--list-item-->
@@ -110,7 +110,7 @@ get_header();
                                     <div class="highlights--card--shade"></div>
                                     <div class="highlights--card--content">
                                         <strong class="highlights--card--title">Singing Telegrams</strong>
-                                        <em class="highlights--card--subtitle">We'll show up anywhere and sing for anyone!</em>
+                                        <em class="highlights--card--subtitle">Great for Anniversaries, and Valentines Day!</em>
                                     </div>
                                 </a>
                             </div> <!-- /.highlights--list-item-->
@@ -122,7 +122,7 @@ get_header();
                                     <div class="highlights--card--shade"></div>
                                     <div class="highlights--card--content">
                                         <strong class="highlights--card--title">Rent Our Venue</strong>
-                                        <em class="highlights--card--subtitle">The Jim Miller Hall is Great for Wedding Receptions, banquets, parties and everything in between!</em>
+                                        <em class="highlights--card--subtitle">Wedding Receptions, banquets, parties and everything in between!</em>
                                     </div>
                                 </a>
                             </div> <!-- /.highlights--list-item-->
@@ -141,11 +141,11 @@ get_header();
                     </div>
                     <div class="col-sm-6">
                         <div class="callouts--card">
-                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/mainstreet-1.jpg);">
+                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/frankin-it-up.jpg);">
                             </div>
                             <div class="callouts--card--content">
                             <h4 class="callouts--card--title">Open Rehearsals</h4>
-                            <p class="callouts--card--description">We rehearse every Monday starting at 7:00 PM. Anyone is welcome to swing by the Jim Miller Hall and sing with us!</p>
+                            <p class="callouts--card--description">We rehearse every Monday starting at 7:00 PM. Swing by the Hall for a tag or three!</p>
                             <div class="callouts--card--link">
                                 <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Learn More</a>
                             </div>
@@ -154,7 +154,7 @@ get_header();
                     </div>
                     <div class="col-sm-6">
                         <div class="callouts--card">
-                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/drew-1.jpg);">
+                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/tbreds.jpg);">
                             </div>
                             <div class="callouts--card--content">
                                 <h4 class="callouts--card--title">Membership Info</h4>
@@ -186,8 +186,8 @@ get_header();
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_sB3qnT4biw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                           
                                 </div>
                                 <div class="highlights--video--content">
-                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
-                                    <p class="highlights--video--description">Written by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde Clydesdale</p>
+                                    <h4 class="highlights--video--title">Clouds on Fire</h4>
+                                    <p class="highlights--video--description">Written by Huck Hucksley</p>
                                 </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
 
@@ -201,7 +201,7 @@ get_header();
                                 </div>
                                 <div class="highlights--video--content">
                                     <h4 class="highlights--video--title">My Old Kentucky Home</h4>
-                                    <p class="highlights--video--description">Written by Clyde Clydesdale</p>
+                                    <p class="highlights--video--description">Written by Borat</p>
                                 </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
 
@@ -212,7 +212,7 @@ get_header();
                                     <iframe src="https://www.youtube.com/embed/VKBmrHGpVPI?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="highlights-ideo--content">
-                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
+                                    <h4 class="highlights--video--title">Sunshine is Bidding the Day Goodbye</h4>
                                     <p class="highlights--video--description">Written by Clyde Clydesdale</p>
                                 </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
@@ -226,8 +226,8 @@ get_header();
                                     <iframe src="https://www.youtube.com/embed/5qEMuDzRRqE?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
                                 </div>
                                 <div class="highlights--video--content">
-                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
-                                    <p class="highlights--video--description">Written by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde ClydesdaleWritten by Clyde Clydesdale</p>
+                                    <h4 class="highlights--video--title">Like Leaves We'll Fall in Love</h4>
+                                    <p class="highlights--video--description">Written by Billy Baldwin</p>
                                 </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
 

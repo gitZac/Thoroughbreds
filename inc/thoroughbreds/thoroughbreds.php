@@ -455,13 +455,7 @@ add_action( 'thoroughbreds_homepage', 'thoroughbreds_render_homepage' );
 function thoroughbreds_render_footer(){ ?>
     
     <div class="thoroughbreds-footer" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo esc_attr( get_theme_mod('footer_background_image', get_template_directory_uri() . '/inc/images/footer.jpg' ) ); ?>">
-        <div>
-            <div class="row">
-                <?php get_sidebar('footer'); ?>
-            </div>            
-        </div>
 
-        
     </div>
     
     <div class="clear"></div>
@@ -523,12 +517,6 @@ function thoroughbreds_render_footer(){ ?>
 
                 ) ); ?>
             <br>
-
-            <a href="https://smartcatdesign.net" rel="designer" style="display: block !important" class="rel">
-                <?php _e( 'Design by' , 'thoroughbreds' ); echo ' Smart' . 'cat'; ?>
-                <img src="<?php echo get_template_directory_uri() . '/inc/images/cat_logo_mini.png'?>"/>
-            </a>
-            
             
         </div>
         
