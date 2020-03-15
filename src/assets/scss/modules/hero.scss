@@ -4,7 +4,7 @@
     position: relative;
     height: 0;
     padding-bottom: 33%;
-    min-height: 700px;
+    min-height: 350px;
 
     &__image{
         position: absolute;
@@ -35,11 +35,38 @@
         bottom: 0;
         right: 0;
         color: #fff;
-        padding: 50px 85px;
+        padding: 50px 100px;
+    }
+
+    &__title{
+        font-size: 2rem;
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        background: #111;
+        padding: 1rem 4rem 1rem 0rem; 
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 100%;
+            bottom: 0;
+            background: #111;
+            width: 100px;
+        }
+
     }
 
     &__subtitle{
         padding-bottom: 1rem;
+        margin:2rem 0;
     }
     
+}
+
+.hero--full{
+    min-height: 1200px;
 }

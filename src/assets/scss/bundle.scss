@@ -8,3 +8,7 @@
 @import './layout/row.scss';
 @import './modules/highlights.scss';
 @import './modules/nav.scss';
+
+//post-single files target .single custom post types
+
+@import './post-single/upcoming_events.scss';

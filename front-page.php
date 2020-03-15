@@ -13,63 +13,78 @@ get_header();
 
         <?php //do_action('thoroughbreds_homepage'); ?>
 
+        <?php $args = array(
+            'post_type' => 'upcoming_events',							
+            'posts_per_page' => 1,							
+            'orderby' => 'date',
+            'order' => 'DESC'
+        ); ?>
+
         <div class="container-fluid">
-            <section class="hero">
-                <div class="hero__image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/centralstock1-3.jpg);"></div>
+
+            <?php $events = new WP_Query($args); while($events->have_posts()): $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+
+            <section class="hero hero--full">
+                <div class="hero__image" style="background-image:url(<?php echo $thumbnail['0']; ?>);"></div>
                 <div class="hero__shade"></div>
                 <div class="hero__content">
                     <div class="hero__title">
-                        <h1 class="">An Evening of Barbershop</h1>
+                        <h1 class="margin-0"><?php the_title(); ?></h1>
                     </div>
                     <div class="hero__subtitle">
-                        September 12 - 24th
+                        <?php the_field('event_date'); ?>
                     </div>
                     <div class="hero__cta">
-                        <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get Tickets</a>
+                        <a href="<?php the_permalink(); ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get Tickets</a>
                     </div>
                 </div>
             </section>
+
+            <?php endwhile; wp_reset_postdata(); ?>
+
         </div><!-- /.container-fluid-->
+
+        <?php $args = array(
+            'post_type' => 'upcoming_events',							
+            'posts_per_page' => 2,							
+            'orderby' => 'date',
+            'offset' => 1,
+            'order' => 'DESC'
+        ); ?>
 
         <div class="container-fluid bg-gray-light">
             <section class="section callouts ">
+
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="section-title">
                             <h2 class="section__title--title">Shows and Events</h2>
                         </div><!-- /.section-title-->
                     </div>
+
+                    <?php $events = new WP_Query($args); while($events->have_posts()): $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+
                     <div class="col-sm-6">
                         <div class="callouts--card">
-                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/mainstreet-1.jpg);">
+                            <div class="callouts--card--image" style="background-image:url(<?php echo $thumbnail['0']; ?>);">
                             </div>
                             <div class="callouts--card--content">
-                            <h4 class="callouts--card--title">Christmas with the Thoroughbreds</h4>
-                            <div class="callouts--card--dates">Through February 17th</div>
-                            <p class="callouts--card--description">A Caribbean-infused musical fairy tale about love’s extraordinary power to tear down walls and transform our lives.</p>
-                            <div class="callouts--card--link">
-                                <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
-                            </div>
+                                <h4 class="callouts--card--title"><?php the_title(); ?></h4>
+                                <div class="callouts--card--dates"><?php the_field('event_date'); ?></div>
+                                <p class="callouts--card--description"><?php the_field('event_description'); ?></p>
+                                <div class="callouts--card--link">
+                                    <a href="<?php the_permalink(); ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="callouts--card">
-                            <div class="callouts--card--image" style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/drew-1.jpg);">
-                            </div>
-                            <div class="callouts--card--content">
-                                <h4 class="callouts--card--title">Winter Song Workshop</h4>
-                                <div class="callouts--card--dates">March 24th</div>
-                                <p class="callouts--card--description">Our winter music workshop is here! If you're looking to brush up on your music technique, now's your chance!</p>
-                                <div class="callouts--card--link">
-                                    <a href="#" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
-                                </div> <!-- /.card--link -->
-                            </div> <!-- /.card--content -->
-                        </div> <!-- /.callouts--card -->
-                    </div> <!-- /.col-sm6 -->
+
+                    <?php endwhile; wp_reset_postdata(); ?>
+
                 </div> <!-- /.row -->
             </section> <!-- /.Callouts -->
         </div> <!-- /.container-fluid-->
+
         <div class="container-fluid padding-none">
             <div class="section highlights">
                 <div class="row">
