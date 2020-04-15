@@ -86,6 +86,14 @@ get_header();
         </div> <!-- /.container-fluid-->
 
         <div class="container-fluid padding-none">
+
+            <?php $args = array(
+                'post_type' => 'services',							
+                'posts_per_page' => -1,							
+                'orderby' => 'date',
+                'order' => 'DESC'
+            ); ?>
+
             <div class="section highlights">
                 <div class="row">
                     <div class="section-title">
@@ -94,54 +102,24 @@ get_header();
                 </div>
                 <div class="highlights--list">
                     <div class="row row--full-width ">
+                    
+                        <?php $services = new WP_Query($args); while($services->have_posts()): $services->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+
                         <div class="col-sm-4 padding-none">
                             <div class="highlights--list--item">
-                                <a href="#" class="highlights--card">
-                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/thethoroughbreds.jpg);" class="highlights--card--image"></div>
+                                <a href="<?php the_permalink(); ?>" class="highlights--card">
+                                    <div style="background-image:url(<?php echo $thumbnail['0']; ?>);" class="highlights--card--image"></div>
                                     <div class="highlights--card--shade"></div>
                                     <div class="highlights--card--content">
-                                        <strong class="highlights--card--title">Chorus Show Package</strong>
-                                        <em class="highlights--card--subtitle">Perfect for events, galas and services.</em>
+                                        <strong class="highlights--card--title"><?php the_title(); ?></strong>
+                                        <em class="highlights--card--subtitle"><?php the_field('service_subtitle'); ?></em>
                                     </div>
                                 </a>
                             </div> <!-- /.highlights--list-item-->
                         </div> <!-- /.col-sm-->
-                        <div class="col-sm-4 padding-none">
-                            <div class="highlights--list--item">
-                                <a href="#" class="highlights--card">
-                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/not-interstate-rivals.jpg);" class="highlights--card--image"></div>
-                                    <div class="highlights--card--shade"></div>
-                                    <div class="highlights--card--content">
-                                        <strong class="highlights--card--title">Hire a Quartet!</strong>
-                                        <em class="highlights--card--subtitle">It's not a party without a quartet.</em>
-                                    </div>
-                                </a>
-                            </div> <!-- /.highlights--list-item-->
-                        </div> <!-- /.col-sm-->
-                        <div class="col-sm-4 padding-none">
-                            <div class="highlights--list--item">
-                                <a href="#" class="highlights--card">
-                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/singer-540771_1280.jpg);" class="highlights--card--image"></div>
-                                    <div class="highlights--card--shade"></div>
-                                    <div class="highlights--card--content">
-                                        <strong class="highlights--card--title">Singing Telegrams</strong>
-                                        <em class="highlights--card--subtitle">Great for Anniversaries, and Valentines Day!</em>
-                                    </div>
-                                </a>
-                            </div> <!-- /.highlights--list-item-->
-                        </div> <!-- /.col-sm-->
-                        <div class="col-sm-4 padding-none">
-                            <div class="highlights--list--item">
-                                <a href="#" class="highlights--card">
-                                    <div style="background-image:url(https://thethoroughbreds.dev.cc/wp-content/uploads/2020/02/jimmillerhall.png);" class="highlights--card--image"></div>
-                                    <div class="highlights--card--shade"></div>
-                                    <div class="highlights--card--content">
-                                        <strong class="highlights--card--title">Rent Our Venue</strong>
-                                        <em class="highlights--card--subtitle">Wedding Receptions, banquets, parties and everything in between!</em>
-                                    </div>
-                                </a>
-                            </div> <!-- /.highlights--list-item-->
-                        </div> <!-- /.col-sm-->
+
+                        <?php endwhile; wp_reset_postdata(); ?>
+
                     </div> <!-- /.row--full-width-->
                 </div> <!-- /.highlights--list-->
             </div><!-- /.section.highlights-->

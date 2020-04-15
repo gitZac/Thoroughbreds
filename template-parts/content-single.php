@@ -9,14 +9,21 @@
 ?>
 
 <?php if (get_post_thumbnail_id($post->ID)) : ?>
-    <div id="thoroughbreds-page-jumbotron" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>" >
-
-        <header class="entry-header">
-            <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-        </header><!-- .entry-header -->
-
-    </div>
+    <section class="hero">
+        <div class="hero__image" style="background-image:url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>);"></div>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+            <div class="hero__title ">
+                <h1 class="margin-0"><?php the_title(); ?></h1>
+            </div>
+            <div class="hero__subtitle">
+                <?php //the_field('event_date'); ?>
+            </div>
+        </div>
+    </section>
 <?php endif; ?>
+
+</div>
 
 <div class="row">
     
@@ -25,25 +32,14 @@
     <div class="col-sm-<?php echo thoroughbreds_main_width(); ?>">
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-
-                <div class="entry-meta">
-                    <div class="meta-detail">
-
-                        <div><span class="fa fa-calendar"></span> <?php echo thoroughbreds_posted_on(); ?></div>
-
-                        <div class="author"><?php echo get_the_author() ? '<span class="fa fa-user"></span> ' . get_the_author() : ' '; ?></div>
-
-                        <div><?php echo get_comments_number() == 0 ? '<span class="fa fa-comment"></span> ' . __('No comments yet', 'thoroughbreds') : get_comments_number() . ' Comments'; ?></div>
-
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title">
+                            <h2 class="section__title--title"><?php the_field('secondary_title');?></h2>
+                        </div><!-- /.section-title-->
                     </div>
-
-                </div><!-- .entry-meta -->
-
-            </header><!-- .entry-header -->
-
+                </div>
             <div class="entry-content">
                 <?php the_content(); ?>
                 <?php
@@ -53,6 +49,8 @@
                 ));
                 ?>
             </div><!-- .entry-content -->
+            </div>
+
 
             <footer class="entry-footer">
                 <?php thoroughbreds_entry_footer(); ?>
