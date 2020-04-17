@@ -170,65 +170,37 @@ get_header();
                         <h2 class="section__title--title">Our Latest Tags</h2>
                     </div><!-- /.section-title-->
                 </div>
+
+                <?php $args = array(
+                        'post_type' => 'video',							
+                        'posts_per_page' => -1,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy'=>'video__type',
+                                'field'=> 'slug',
+                                'terms' => 'barbershop-tag'
+                            ),
+                        ),
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    ); ?>
+
                 <div class="highlights--video">
                     <div class="row">
-
+                        <?php $video = new WP_Query($args); while($video->have_posts()): $video->the_post(); ?>
                         <div class="col-sm-6 padding-none">
-
                             <div class="highlights--video--item">
                                 <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_sB3qnT4biw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                           
+                                    <?php the_field('embed_link'); ?>
                                 </div>
                                 <div class="highlights--video--content">
-                                    <h4 class="highlights--video--title">Clouds on Fire</h4>
-                                    <p class="highlights--video--description">Written by Huck Hucksley</p>
+                                    <h4 class="highlights--video--title"><?php the_title(); ?></h4>
+                                    <p class="highlights--video--description"><?php the_field('video_by'); ?></p>
                                 </div> <!-- /.card--content -->
                             </div> <!-- /.highlights--list-item-->
-
                         </div> <!-- /.col-sm-->
-                        <div class="col-sm-6 padding-none">
-
-                            <div class="highlights--video--item">
-
-                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe src="https://www.youtube.com/embed/50u5u40kFZM?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="highlights--video--content">
-                                    <h4 class="highlights--video--title">My Old Kentucky Home</h4>
-                                    <p class="highlights--video--description">Written by Borat</p>
-                                </div> <!-- /.card--content -->
-                            </div> <!-- /.highlights--list-item-->
-
-                        </div> <!-- /.col-sm-->
-                        <div class="col-sm-6 padding-none">
-                            <div class="highlights--video--item">
-                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe src="https://www.youtube.com/embed/VKBmrHGpVPI?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="highlights-ideo--content">
-                                    <h4 class="highlights--video--title">Sunshine is Bidding the Day Goodbye</h4>
-                                    <p class="highlights--video--description">Written by Clyde Clydesdale</p>
-                                </div> <!-- /.card--content -->
-                            </div> <!-- /.highlights--list-item-->
-
-                        </div> <!-- /.col-sm-->
-                        <div class="col-sm-6 padding-none">
-
-                            <div class="highlights--video--item">
-
-                                <div class="highlights--video--item--inner highlights--video--item--inner-vi-ratio">
-                                    <iframe src="https://www.youtube.com/embed/5qEMuDzRRqE?controls=0&amp;start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           
-                                </div>
-                                <div class="highlights--video--content">
-                                    <h4 class="highlights--video--title">Like Leaves We'll Fall in Love</h4>
-                                    <p class="highlights--video--description">Written by Billy Baldwin</p>
-                                </div> <!-- /.card--content -->
-                            </div> <!-- /.highlights--list-item-->
-
-                        </div> <!-- /.col-sm-->
-
+                        <?php endwhile; wp_reset_postdata(); ?>
                     </div> <!-- /.row--full-width-->
-
                 </div> <!-- /.highlights--video-->
             </div><!-- /.section.highlights-->
         </div><!-- /.container-fluid-->
