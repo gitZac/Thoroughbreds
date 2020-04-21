@@ -158,8 +158,7 @@ get_header();
                     </div>
 
                     <?php endwhile; wp_reset_postdata(); ?>
-
-
+                    
                 </div> <!-- /.row -->
             </section> <!-- /.Callouts -->
         </div> <!-- /.container-fluid-->

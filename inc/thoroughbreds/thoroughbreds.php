@@ -532,6 +532,17 @@ function thoroughbreds_render_footer(){ ?>
 <?php }
 add_action( 'thoroughbreds_footer', 'thoroughbreds_render_footer' );
 
+// Changing excerpt more
+function new_excerpt_more($more) {
+    global $post;
+    return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 class thoroughbreds_recent_posts_widget extends WP_Widget {

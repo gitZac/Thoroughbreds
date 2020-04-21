@@ -6,49 +6,46 @@
  *
  * @package thoroughbreds
  */
-
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <h1>FROM archive-singers.p</h1>
+<div class="container-fluid">
 
-    <main id="main" class="site-main thoroughbreds-blog-page" role="main">
 
+    <section class="content profile">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section-title">
+                    <h2 class="section__title--title">Singer section title</h2>
+                </div>
+            </div>    
+        </div>
 
         <div class="row">
 
-            <?php get_sidebar('left'); ?>
+            <?php if (have_posts()) : ?>
 
-            <div class="thoroughbreds-blog-content col-sm-<?php echo thoroughbreds_main_width(); ?>">
-                <?php if (have_posts()) : ?>
-
-
-
-                    <?php /* Start the Loop */ ?>
-                    <?php while (have_posts()) : the_post(); ?>
-
-                        <?php get_template_part('template-parts/content-blog', get_post_format()); ?>
-
-                    <?php endwhile; ?>
+                <?php /* Start the Loop */ ?>
+                <?php while (have_posts()) : the_post(); ?>
 
 
+                    <?php get_template_part( 'template-parts/content-singers'); ?>
 
-                <?php else : ?>
 
-                    <?php get_template_part('template-parts/content', 'none'); ?>
+                <?php endwhile; ?>
 
-                <?php endif; ?>
-            </div>
+            <?php else : ?>
 
-            <?php get_sidebar(); ?>
+                <?php get_template_part('template-parts/content', 'none'); ?>
+
+            <?php endif; ?>
 
         </div>
-        <div class="clear"></div>
-        <div class="thoroughbreds-pagination">
-            <?php echo paginate_links(); ?>
-        </div>
-    </main><!-- #main -->
-</div><!-- #primary -->
+
+    </section>
+
+
+ </div><!-- ./container-fluid -->
+
 
 
 <?php get_footer(); ?>
