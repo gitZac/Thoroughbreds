@@ -9,43 +9,58 @@
 get_header(); ?>
 
 <div class="container-fluid">
+    <h2><?php echo get_the_archive_title(); ?></h2>
 
+<?php
 
-    <section class="content profile">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title">
-                    <h2 class="section__title--title">Singer section title</h2>
-                </div>
-            </div>    
-        </div>
+$_terms = get_terms( array ('section') );
 
-        <div class="row">
+foreach ($_terms as $term) :
+    
+    $term_slug = $term->slug;
 
-            <?php if (have_posts()) : ?>
+    $_posts = new WP_Query( array(
+        'post_type' => 'singers',
+        'posts_per_page' => -1,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'section',
+                'field' => 'slug',
+                'terms' => $term_slug
+            ),
+        ),
+    ) );
 
-                <?php /* Start the Loop */ ?>
-                <?php while (have_posts()) : the_post(); ?>
+    if($_posts->have_posts() ) : ?>
 
+        <section class="content profile">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2 class="section__title--title"><?php echo $term->name; ?></h2>
+                    </div>
+                </div>    
+            </div>
+            <div class="row">
+
+                <?php while($_posts->have_posts() ) : $_posts->the_post(); ?>
 
                     <?php get_template_part( 'template-parts/content-singers'); ?>
 
-
                 <?php endwhile; ?>
 
-            <?php else : ?>
+            </div>
 
-                <?php get_template_part('template-parts/content', 'none'); ?>
+        </section>
 
-            <?php endif; ?>
+    <?php
+        endif;
+        wp_reset_postdata();
 
-        </div>
+    endforeach;
 
-    </section>
-
+    ?>
 
  </div><!-- ./container-fluid -->
-
-
 
 <?php get_footer(); ?>

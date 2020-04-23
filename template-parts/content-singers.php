@@ -1,4 +1,4 @@
-<article class="catcard col-md-4">
+<article class="catcard col-md-3">
     <div class="catcard__inner">
         <div class="catcard__upper">
             <div class="catcard__cat-image">
