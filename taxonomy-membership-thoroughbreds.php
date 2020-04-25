@@ -6,49 +6,68 @@
  *
  * @package thoroughbreds
  */
-
 get_header(); ?>
 
-<div id="primary" class="content-area">
-    <h1>From taxonomy-membership-thoroughbreds.php</h1>
+<div class="container-fluid">
+    <h2><?php echo get_the_archive_title(); ?></h2>
 
-    <main id="main" class="site-main thoroughbreds-blog-page" role="main">
+<?php
 
+$_terms = get_terms( array ('section') );
 
-        <div class="row">
+foreach ($_terms as $term) :
+    
+    $term_slug = $term->slug;
 
-            <?php //get_sidebar('left'); ?>
+    $_posts = new WP_Query( array(
+        'post_type' => 'singers',
+        'posts_per_page' => -1,
+        'tax_query' => array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'section',
+                'field' => 'slug',
+                'terms' => $term_slug
+            ),
+            array(
+                'taxonomy' => 'membership',
+                'field' => 'slug',
+                'terms' => 'thoroughbreds'
+            ),
+        ),
+    ) );
 
-            <div class="thoroughbreds-blog-content col-sm-<?php echo thoroughbreds_main_width(); ?>">
-                <?php if (have_posts()) : ?>
+    if($_posts->have_posts() ) : ?>
 
+        <section class="content profile">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2 class="section__title--title"><?php echo $term->name; ?></h2>
+                    </div>
+                </div>    
+            </div>
+            <div class="row">
 
+                <?php while($_posts->have_posts() ) : $_posts->the_post(); ?>
 
-                    <?php /* Start the Loop */ ?>
-                    <?php while (have_posts()) : the_post(); ?>
+                    <?php get_template_part( 'template-parts/content-singers'); ?>
 
-                        <?php get_template_part('template-parts/content-blog', get_post_format()); ?>
+                <?php endwhile; ?>
 
-                    <?php endwhile; ?>
-
-
-
-                <?php else : ?>
-
-                    <?php get_template_part('template-parts/content', 'none'); ?>
-
-                <?php endif; ?>
             </div>
 
-            <?php //get_sidebar(); ?>
+        </section>
 
-        </div>
-        <div class="clear"></div>
-        <div class="thoroughbreds-pagination">
-            <?php echo paginate_links(); ?>
-        </div>
-    </main><!-- #main -->
-</div><!-- #primary -->
+    <?php
+        endif;
+        wp_reset_postdata();
 
+    endforeach;
+
+    ?>
+
+ </div><!-- ./container-fluid -->
 
 <?php get_footer(); ?>
+
