@@ -38,23 +38,18 @@ get_header(); ?>
                 </div>    
             </div>
             <div class="row">
-
                 <?php while($_posts->have_posts() ) : $_posts->the_post(); ?>
 
                     <?php get_template_part( 'template-parts/content-singers'); ?>
 
                 <?php endwhile; ?>
-
             </div>
-
         </section>
 
     <?php
         endif;
         wp_reset_postdata();
-
     ?>
-
  </div><!-- ./container-fluid -->
 
 <?php get_footer(); ?>
