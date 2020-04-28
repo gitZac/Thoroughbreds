@@ -53,7 +53,7 @@ get_header();
         ); ?>
 
         <div class="container-fluid bg-gray-light">
-            <section class="section callouts ">
+            <section class="callouts ">
 
                 <div class="row">
                     <div class="col-sm-12">

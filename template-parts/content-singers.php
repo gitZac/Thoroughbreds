@@ -1,3 +1,22 @@
+<?php
+$_term = get_queried_object('quartet');
+
+$_posts = new WP_Query( array(
+    'post_type' => 'singers',
+    'posts_per_page' => -1,
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'quartet',
+            'field' => 'slug',
+            'terms' => $_term
+        ),
+    ),
+) ); 
+
+if($_posts->have_posts() ) : ?>
+
+<?php while($_posts->have_posts() ) : $_posts->the_post(); ?>
+
 <article class="catcard col-md-3">
     <div class="catcard__inner">
         <div class="catcard__upper">
@@ -15,3 +34,5 @@
         </div>
     </div><!--./catcard-inner-->
 </article>
+
+<?php endwhile; endif; wp_reset_postdata();?>

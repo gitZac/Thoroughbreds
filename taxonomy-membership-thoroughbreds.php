@@ -51,7 +51,7 @@ foreach ($_terms as $term) :
 
                 <?php while($_posts->have_posts() ) : $_posts->the_post(); ?>
 
-                    <?php get_template_part( 'template-parts/content-singers'); ?>
+                    <?php get_template_part( 'template-parts/loop-singers'); ?>
 
                 <?php endwhile; ?>
 
