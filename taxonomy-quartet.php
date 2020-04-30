@@ -14,6 +14,7 @@ get_header();
     $_term = get_queried_object('quartet');
     $image = get_field('header_image_quartet', $_term);
     $tagline = get_field('quartet_tag_line', $_term); 
+    $content = get_field('page_content_quartet', $_term);
 
     $obj_id = get_queried_object_id();
     $current_url = get_term_link( $obj_id ) . '#topshow';
@@ -39,46 +40,56 @@ get_header();
 </div>
 
 <div class="container-fluid">
-        <section class="content">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title">
-                        <h2 class="section__title--title"><?php echo $tagline  ?></h2>
-                        <?php echo category_description(); ?>
-                    </div>
-                </div>    
-            </div>
-        </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section-title">
+                    <h2 class="section__title--title"><?php echo $tagline  ?></h2>
+                    <?php echo $content; ?>
+                </div>
+            </div>    
+        </div>
+    </section>
 
-        <!-- Profile Card Loop -->
+    <!-- Profile Card Loop -->
+    <section class="profiles">
+        <div class="row">
+            <h2 class="header__secondary--line">Meet <?php single_term_title(); ?></h2> 
+        </div>
+        <div class="row">
+            <?php get_template_part( 'template-parts/content-singers'); ?>
+        </div>
+    </section>
 
-        <section class="profiles"> 
-            <div class="row">
-                <?php get_template_part( 'template-parts/content-singers'); ?>
-            </div>
-        </section>
+    <!-- Event Loop -->
+    <section class="callouts">
+        <div class="row">
+            <h2 class="header__secondary--line">Hear us sing!</h2> 
+        </div>
+        <div id="#topshow" class="row">
+            <?php get_template_part('template-parts/loop/loop-events-quartet'); ?>
+        </div>
+    </section>
 
-        <!-- Video Loop -->
+    <!-- Video Loop -->
+    <section class="profiles">
+        <div class="row">
+            <h2 class="header__secondary--line">Newest Videos</h2> 
+        </div> 
+        <div class="row">
+            <?php get_template_part( 'template-parts/loop/loop-video-quartet'); ?>
+        </div>
+    </section>
 
-        <section class="profiles"> 
-            <div class="row">
-                <?php get_template_part( 'template-parts/loop/loop-video-quartet'); ?>
-            </div>
-        </section>
-
-        <!-- Event Loop -->
-
-        <section class="callouts">
-            <div id="#topshow" class="row">
-                <?php get_template_part('template-parts/loop/loop-events-quartet'); ?>
-            </div>
-        </section>
-
-
-    <?php
-        
-    ?>
+    <!-- Booking -->
+    <section class="profiles">
+        <div class="row">
+            <h2 class="header__secondary--line">Book <?php single_term_title(); ?>!</h2> 
+        </div> 
+        <div class="row">
+            <!-- Code here. Use highlights as CTAs? -->
+        </div>
+    </section>
 </div><!-- ./container-fluid -->
 
 <?php get_footer(); ?>
-
