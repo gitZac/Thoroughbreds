@@ -13,8 +13,10 @@ get_header();
 <?php 
     $_term = get_queried_object('quartet');
     $image = get_field('header_image_quartet', $_term);
+    $cta_image_quartet = get_field('cta_image_quartet', $_term);
     $tagline = get_field('quartet_tag_line', $_term); 
     $content = get_field('page_content_quartet', $_term);
+    $booking_description = get_field('booking_description', $_term);
 
     $obj_id = get_queried_object_id();
     $current_url = get_term_link( $obj_id ) . '#topshow';
@@ -82,14 +84,35 @@ get_header();
     </section>
 
     <!-- Booking -->
+
     <section class="profiles">
         <div class="row">
             <h2 class="header__secondary--line">Book <?php single_term_title(); ?>!</h2> 
-        </div> 
-        <div class="row">
-            <!-- Code here. Use highlights as CTAs? -->
         </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="callouts--card">
+                    <div class="callouts--card--image" style="background-image:url(<?php echo $cta_image_quartet['url']; ?>);">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="callouts--card">
+                    <div class="callouts--card--content--right">
+                        <h4 class="callouts--card--title--right">Contact us to learn more!</h4>
+                        <div class="callouts--card--dates"></div>
+                        <p class="callouts--card--description"><?php echo $booking_description; ?></p>
+                        <div class="callouts--card--link">
+                            <a href="<?php the_permalink(); ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Our Next Show</a>
+                            <a href="/hire-the-thoroughbreds/hire-a-quartet/" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">More Quartets!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
     </section>
 </div><!-- ./container-fluid -->
 
 <?php get_footer(); ?>
+

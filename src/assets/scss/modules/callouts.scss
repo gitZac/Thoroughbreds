@@ -21,6 +21,10 @@
             padding-left: 175px;
         }
 
+        &--content--right{
+            padding-left: 0;
+        }
+
         &--dates{
             color: #e83b52;
             text-transform: uppercase;
@@ -32,6 +36,16 @@
         }
 
         &--title{
+            position: relative;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 2.4rem;
+            line-height: 1em;
+            letter-spacing: normal;
+            text-transform: none;
+            margin: 0 0 20px 0;
+        }
+        &--title--right{
             position: relative;
             font-weight: bold;
             font-style: normal;

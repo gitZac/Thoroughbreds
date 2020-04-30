@@ -94,7 +94,7 @@ get_header();
                 'order' => 'DESC'
             ); ?>
 
-            <div class="section highlights">
+            <section class="section highlights">
                 <div class="row">
                     <div class="section-title">
                         <h2 class="section__title--title">Hire Us!</h2>
@@ -122,7 +122,7 @@ get_header();
 
                     </div> <!-- /.row--full-width-->
                 </div> <!-- /.highlights--list-->
-            </div><!-- /.section.highlights-->
+            </section><!-- /.section.highlights-->
         </div><!-- /.container-fluid-->
         <div class="container-fluid bg-gray-light">
             <section class="section callouts ">
