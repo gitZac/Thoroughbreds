@@ -27,11 +27,11 @@ if($_posts->have_posts() ) : ?>
                 </div>
             </div><!--./catcard-cat-image-->
         </div> <!--./catcard-upper-->
-        <div class="catcard__lower">
+        <!-- <div class="catcard__lower">
             <div class="catcard__content">
-                <?php the_excerpt(); ?>
+                <?php //the_excerpt(); ?>
             </div>
-        </div>
+        </div> -->
     </div><!--./catcard-inner-->
 </article>
 
