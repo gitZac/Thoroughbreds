@@ -1,15 +1,22 @@
 <?php
 
-    $_term = get_queried_object('event_performer'); 
+$_term = get_queried_object('quartet');
+$_mterm = get_queried_object('membership');
 
     $events = new WP_Query( array(
         'post_type' => 'upcoming_events',
         'posts_per_page' => -1,
         'tax_query' => array( 
+            'relation' => 'OR',
             array(
-                'taxonomy' => 'event_performer',
-                'field' => 'slug',
+                'taxonomy'=>'quartet',
+                'field'=> 'slug',
                 'terms' => $_term
+            ),
+            array(
+                'taxonomy'=>'membership',
+                'field'=> 'slug',
+                'terms' => $_mterm
             ),
         ),
     ) );

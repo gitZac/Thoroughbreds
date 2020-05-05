@@ -1,6 +1,7 @@
 <?php 
 
-    $_term = get_queried_object('quartet'); 
+    $_term = get_queried_object('quartet');
+    $_mterm = get_queried_object('membership');
 
     $videos = new WP_Query( array(
     'post_type' => 'video',							
@@ -15,14 +16,12 @@
         array(
             'taxonomy'=>'membership',
             'field'=> 'slug',
-            'terms' => 'colts'
+            'terms' => $_mterm
         ),
     ),
     'orderby' => 'date',
     'order' => 'DESC'
 ) ); 
-
-//probably do not need the "or", we just need to create a separate loop for get queried object when it comes time to set up that template.
 ?>
 
 <?php if($videos->have_posts() ) : ?>

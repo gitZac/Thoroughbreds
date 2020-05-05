@@ -12,10 +12,10 @@ get_header();
 
 <?php 
     $_term = get_queried_object('quartet');
-    $image = get_field('header_image_quartet', $_term);
-    $cta_image_quartet = get_field('cta_image_quartet', $_term);
-    $tagline = get_field('quartet_tag_line', $_term); 
-    $content = get_field('page_content_quartet', $_term);
+    $image = get_field('header_image_group', $_term);
+    $cta_image_quartet = get_field('cta_image_group', $_term);
+    $tagline = get_field('group_tag_line', $_term); 
+    $content = get_field('page_content_group', $_term);
     $booking_description = get_field('booking_description', $_term);
 
     $obj_id = get_queried_object_id();
@@ -54,7 +54,7 @@ get_header();
     </section>
 
     <!-- Profile Card Loop -->
-    <section class="profiles">
+    <section class="singers">
         <div class="row">
             <h2 class="header__secondary--line">Meet <?php single_term_title(); ?></h2> 
         </div>
@@ -69,23 +69,23 @@ get_header();
             <h2 class="header__secondary--line">Hear us sing!</h2> 
         </div>
         <div id="#topshow" class="row">
-            <?php get_template_part('template-parts/loop/loop-events-quartet'); ?>
+            <?php get_template_part('template-parts/loop/loop-events-lp'); ?>
         </div>
     </section>
 
     <!-- Video Loop -->
-    <section class="profiles">
+    <section class="videos">
         <div class="row">
             <h2 class="header__secondary--line">Newest Videos</h2> 
         </div> 
         <div class="row">
-            <?php get_template_part( 'template-parts/loop/loop-video-quartet'); ?>
+            <?php get_template_part( 'template-parts/loop/loop-video-lp'); ?>
         </div>
     </section>
 
     <!-- Booking -->
 
-    <section class="profiles">
+    <section class="booking">
         <div class="row">
             <h2 class="header__secondary--line">Book <?php single_term_title(); ?>!</h2> 
         </div>

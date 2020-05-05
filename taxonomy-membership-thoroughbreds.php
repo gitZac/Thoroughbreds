@@ -8,66 +8,100 @@
  */
 get_header(); ?>
 
+<?php 
+    $_term = get_queried_object('membership'); //Varies by template
+
+    //ACF Fields
+    $image = get_field('header_image_group', $_term);
+    $cta_image_quartet = get_field('cta_image_group', $_term);
+    $tagline = get_field('group_tag_line', $_term); 
+    $content = get_field('page_content_group', $_term);
+    $booking_description = get_field('booking_description', $_term);
+
+    $obj_id = get_queried_object_id();
+    $current_url = get_term_link( $obj_id ) . '#topshow';
+?>
+
 <div class="container-fluid">
-    <h2><?php echo get_the_archive_title(); ?></h2>
+    <section class="hero">
+        <div class="hero__image" style="background-image:url(<?php echo $image['url']; ?>);"></div>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+            <div class="hero__title ">
+                <h1 class="margin-0"><?php single_term_title(); ?></h1>
+            </div>
+            <div class="hero__subtitle">
+                <?php //the_field('event_date'); ?>
+            </div>
+            <div class="hero__cta">
+                <a href="<?php $current_url; ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Book <?php single_term_title(); ?></a>
+                <a href="#" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">Our Next Performance</a>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="section-title">
+                    <h2 class="section__title--title"><?php echo $tagline  ?></h2>
+                    <?php echo $content; ?>
+                </div>
+            </div>    
+        </div>
+    </section>
 
-<?php
+    <section class="singers">
+        <?php get_template_part( 'template-parts/loop/loop-singers' ); ?>
+    </section>
+<!-- Event Loop -->
+    <section class="callouts">
+        <div class="row">
+            <h2 class="header__secondary--line">Hear us sing!</h2> 
+        </div>
+        <div id="#topshow" class="row">
+            <?php get_template_part('template-parts/loop/loop-events-lp'); ?>
+        </div>
+    </section>
 
-$_terms = get_terms( array ('section') );
+    <!-- Video Loop -->
+    <section class="videos">
+        <div class="row">
+            <h2 class="header__secondary--line">Newest Videos</h2> 
+        </div> 
+        <div class="row">
+            <?php get_template_part( 'template-parts/loop/loop-video-lp'); ?>
+        </div>
+    </section>
 
-foreach ($_terms as $term) :
-    
-    $term_slug = $term->slug;
+    <!-- Booking -->
 
-    $_posts = new WP_Query( array(
-        'post_type' => 'singers',
-        'posts_per_page' => -1,
-        'tax_query' => array(
-            'relation' => 'AND',
-            array(
-                'taxonomy' => 'section',
-                'field' => 'slug',
-                'terms' => $term_slug
-            ),
-            array(
-                'taxonomy' => 'membership',
-                'field' => 'slug',
-                'terms' => 'thoroughbreds'
-            ),
-        ),
-    ) );
-
-    if($_posts->have_posts() ) : ?>
-
-        <section class="content profile">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title">
-                        <h2 class="section__title--title"><?php echo $term->name; ?></h2>
+    <section class="booking">
+        <div class="row">
+            <h2 class="header__secondary--line">Book <?php single_term_title(); ?>!</h2> 
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="callouts--card">
+                    <div class="callouts--card--image" style="background-image:url(<?php echo $cta_image_quartet['url']; ?>);">
                     </div>
-                </div>    
+                </div>
             </div>
-            <div class="row">
-
-                <?php while($_posts->have_posts() ) : $_posts->the_post(); ?>
-
-                    <?php get_template_part( 'template-parts/loop-singers'); ?>
-
-                <?php endwhile; ?>
-
+            <div class="col-sm-4">
+                <div class="callouts--card">
+                    <div class="callouts--card--content--right">
+                        <h4 class="callouts--card--title--right">Contact us to learn more!</h4>
+                        <div class="callouts--card--dates"></div>
+                        <p class="callouts--card--description"><?php echo $booking_description; ?></p>
+                        <div class="callouts--card--link">
+                            <a href="<?php the_permalink(); ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Our Next Show</a>
+                            <a href="/hire-the-thoroughbreds/hire-a-quartet/" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">Find a Quartet!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </section>
-
-    <?php
-        endif;
-        wp_reset_postdata();
-
-    endforeach;
-
-    ?>
-
- </div><!-- ./container-fluid -->
+        </div> 
+    </section>
+</div>
 
 <?php get_footer(); ?>
 
