@@ -48,7 +48,7 @@ const paths = {
 }
 
 const server = browserSync.create();
-const serverProxy = 'https://thethoroughbreds.dev.cc/';
+const serverProxy = 'https://tbreds.dev.cc/';
 
 /**
  *  TASKS
@@ -110,30 +110,30 @@ export const styles = (done) => {
  */
 
 export const scripts = (done) => {
-    // return gulp.src(paths.scripts.src)
-    //     .pipe(named())
-    //     .pipe(webpack({
-    //         module: {
-    //             rules:[
-    //                 {
-    //                     test: /\.js$/,
-    //                     use: {
-    //                         loader: 'babel-loader',
-    //                         options: {
-    //                             presets: ['babel-preset-env']
-    //                         }
-    //                     }
-    //                 }
-    //             ]
-    //         }, 
-    //         output: {
-    //             filename: '[name].js'
-    //         },
-    //         externals:{
-    //             jquery:'jQuery'
-    //         }
-    //     }))
-    //     .pipe(gulp.dest(paths.scripts.dest)) 
+    return gulp.src(paths.scripts.src)
+        .pipe(named())
+        .pipe(webpack({
+            module: {
+                rules:[
+                    {
+                        test: /\.js$/,
+                        use: {
+                            loader: 'babel-loader',
+                            options: {
+                                presets: ['babel-preset-env']
+                            }
+                        }
+                    }
+                ]
+            }, 
+            output: {
+                filename: '[name].js'
+            },
+            externals:{
+                jquery:'jQuery'
+            }
+        }))
+        .pipe(gulp.dest(paths.scripts.dest)) 
     
         done();
 }
