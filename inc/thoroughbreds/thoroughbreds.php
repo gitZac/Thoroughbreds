@@ -42,6 +42,9 @@ function thoroughbreds_scripts() {
     if ( 'Lobster Two, cursive' == get_theme_mod('header_font', 'Raleway, sans-serif') || 'Lobster Two, cursive' == get_theme_mod('theme_font', 'Raleway, sans-serif') )
         wp_enqueue_style('thoroughbreds-font-lobster', '//fonts.googleapis.com/css?family=Lobster+Two:400,700', array(), thoroughbreds_VERSION);
 
+
+    wp_enqueue_style('thoroughbreds-font-cursive', '//fonts.googleapis.com/css2?family=Sacramento&display=swap', array(), thoroughbreds_VERSION);
+
     wp_enqueue_style('thoroughbreds-bootstrap', get_template_directory_uri() . '/inc/css/bootstrap.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-bootstrap-grid', get_template_directory_uri() . '/inc/css/bootstrap-grid.min.css', array(), thoroughbreds_VERSION);
     wp_enqueue_style('thoroughbreds-bootstrap-theme', get_template_directory_uri() . '/inc/css/bootstrap-theme.min.css', array(), thoroughbreds_VERSION);
