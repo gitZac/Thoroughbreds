@@ -5,6 +5,25 @@
         font-size: 12px;
         padding-top: 1rem;
     }
+
+    .donate-button{
+        background: $color-primary;
+        color: #fff;
+    }
+
+    .donate-button a{
+        font-size: 1.2rem;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+
+    .donate-button a:after {
+        font-family: FontAwesome;
+        content: "\f054";
+        margin-left: 8px;
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
 }
 
 #site-footer{

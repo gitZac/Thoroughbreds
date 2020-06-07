@@ -48,7 +48,7 @@
                     <div class="header-inner">
 
                         <div class="row row--full-width">
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <div class="thoroughbreds-branding">
 
                                     <div class="site-branding">
@@ -73,7 +73,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-9">
                                 <div class="thoroughbreds-header-menu">
 
                                     <?php if( class_exists( 'WooCommerce' ) ) : ?>
