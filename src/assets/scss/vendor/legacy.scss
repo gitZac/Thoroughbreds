@@ -378,10 +378,6 @@ ul.thoroughbreds-nav > li.menu-item.menu-item-has-children > a:after{
     background-size: cover;
 }
 
-#thoroughbreds-jumbotron .thoroughbreds-button{
-    margin-bottom: 10px;
-}
-
 #thoroughbreds-jumbotron .overlay{
     position: absolute;
     top: 70%;
@@ -555,43 +551,6 @@ ul.thoroughbreds-nav > li.menu-item.menu-item-has-children > a:after{
     color: rgb(255, 255, 255);
     font-size: 18px;
     
-}
-
-/*-- 4. Buttons --*/
-.thoroughbreds-button,
-button, 
-input[type="button"], 
-input[type="reset"], 
-input[type="submit"]{
-    padding: 10px;
-    color: #fff;
-    background: #C8C8C8;
-    background: rgba( 200, 200, 200, 0.9 );
-    margin-right: 10px !important;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-}
-
-.thoroughbreds-button.large{
-    padding: 15px 25px;
-    font-size: 20px;
-}
-
-.thoroughbreds-button:hover{
-    color: #fff;
-    background: #505050;
-}
-
-.thoroughbreds-button.default{
-    color: #fff;
-    background: #C8C8C8;
-    background: rgba( 200, 200, 200, 0.9 );    
-}
-
-.thoroughbreds-button.default:hover{
-    background: #505050;
-    color: #fff;
 }
 
 /*-- 5. Footer --*/
@@ -1037,18 +996,6 @@ header#title_bread_wrap .entry-title {
 
 .woocommerce .woocommerce-breadcrumb {
     margin-bottom: 30px;
-}
-
-.woocommerce a.button,
-.woocommerce button.button,
-.woocommerce input[type="submit"] {
-    padding: 10px;
-    color: #fff !important;
-    margin-right: 10px !important;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    border-radius: 0;
 }
 
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {

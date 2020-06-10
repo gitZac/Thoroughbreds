@@ -17,9 +17,6 @@ get_header(); ?>
     $tagline = get_field('group_tag_line', $_term); 
     $content = get_field('page_content_group', $_term);
     $booking_description = get_field('booking_description', $_term);
-
-    $obj_id = get_queried_object_id();
-    $current_url = get_term_link( $obj_id ) . '#topshow';
 ?>
 
 <div class="container-fluid">
@@ -30,12 +27,9 @@ get_header(); ?>
             <div class="hero__title ">
                 <h1 class="margin-0"><?php single_term_title(); ?></h1>
             </div>
-            <div class="hero__subtitle">
-                <?php //the_field('event_date'); ?>
-            </div>
             <div class="hero__cta">
                 <a href="<?php $current_url; ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Book <?php single_term_title(); ?></a>
-                <a href="#" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">Our Next Performance</a>
+                <a href="#topshow" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">Our Next Performance</a>
             </div>
         </div>
     </section>
@@ -58,7 +52,7 @@ get_header(); ?>
         <div class="row">
             <h2 class="header__secondary--line">Hear us sing!</h2> 
         </div>
-        <div id="#topshow" class="row">
+        <div class="row"><a id="topshow"></a>
             <?php get_template_part('template-parts/loop/loop-events-lp'); ?>
         </div>
     </section>

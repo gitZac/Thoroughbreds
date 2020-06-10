@@ -3,8 +3,13 @@
     width: 100%;
     position: relative;
     height: 0;
-    padding-bottom: 33%;
-    min-height: 600px;
+    padding-bottom: 100%; //This percentage is what has to be completely responsive.
+    @include respond(laptop){
+        padding-bottom: 45%;
+    }
+    @include respond(desktop){
+        padding-bottom: 55%;
+    }
 
     &__image{
         position: absolute;
@@ -13,7 +18,7 @@
         bottom: 0;
         left: 0;
         background-repeat: no-repeat;
-        background-position: center center fixed;
+        background-position: center center;
         background-size:cover;
         display: block;
     }
@@ -35,7 +40,11 @@
         bottom: 0;
         right: 0;
         color: #fff;
-        padding: 50px 100px;
+        padding: 50px 50px;
+
+        @include respond(laptop){
+            padding: 50px 100px;
+        }
     }
 
     &__title-wrapper{
@@ -43,7 +52,7 @@
         position: relative;
         text-transform: uppercase;
         font-weight: bold;
-        background: #111;
+        background: #000;
         padding: 1rem 4rem 1rem 0rem; 
 
         &::before{
@@ -53,7 +62,7 @@
             top: 0;
             right: 100%;
             bottom: 0;
-            background: #111;
+            background: #000;
             width: 100px;
         }
 
@@ -80,11 +89,21 @@
 
     &__subtitle{
         padding-bottom: 1rem;
-        margin:2rem 0;
+        margin:.5rem 0;
+
+        @include respond(laptop){
+            margin:1.5rem 0;
+        }
     }
     
 }
 
 .hero--full{
-    min-height: 100vh;
+    padding-bottom: 100%; //This percentage is what has to be completely responsive.
+    @include respond(laptop){
+        padding-bottom: 50%;
+    }
+    @include respond(desktop){
+        padding-bottom: 55%;
+    }
 }
