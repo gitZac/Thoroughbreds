@@ -39,3 +39,12 @@
     text-align: left;
     font-size: 12px;
 }
+
+#thoroughbreds-header.frontpage.sticky .header-inner {
+    height: 80px;
+    background: #1b1b1b;
+}
+
+#thoroughbreds-header.frontpage.sticky .header-inner #thoroughbreds-logo img {
+    max-height: 75px;
+}
