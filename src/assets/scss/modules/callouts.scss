@@ -18,7 +18,10 @@
         }
 
         &--content{
-            padding-left: 175px;
+            padding-left:90px;
+            @include respond(desktop){
+                padding-left: 175px;
+            }
         }
 
         &--content--right{
