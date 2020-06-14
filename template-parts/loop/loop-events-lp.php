@@ -22,7 +22,7 @@ $_mterm = get_queried_object('membership');
     ) );
 ?>
 
-<?php if ($events->have_posts() ) : ?>
+<?php if ($events->have_posts() ) { ?>
     <?php while($events->have_posts() ) : $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');?>
 
     <div class="col-sm-6">
@@ -39,6 +39,8 @@ $_mterm = get_queried_object('membership');
             </div>
         </div>
     </div>
+    <?php endwhile; wp_reset_postdata();?>
 
-    <?php endwhile; 
-endif; wp_reset_postdata();?>
+<?php } else {
+    get_template_part('template-parts/content-none_events');
+} ?>

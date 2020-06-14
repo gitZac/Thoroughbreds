@@ -10,7 +10,7 @@
 
 <div class="container-fluid">
 
-<?php if (get_post_thumbnail_id($post->ID)) : ?>
+<?php if (get_post_thumbnail_id($post->ID) && has_post_thumbnail() ) : ?>
     <section class="hero">
         <div class="hero__image" style="background-image:url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>);"></div>
         <div class="hero__shade"></div>

@@ -5,12 +5,7 @@
     'order' => 'DESC'
 ); ?>
         
-
-
-
-
 <div class="scrapbook">
-
 
     <div class="row row--full-width">
 

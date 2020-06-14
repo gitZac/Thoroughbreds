@@ -51,7 +51,7 @@ get_header();
     </section>
 
     <!-- Profile Card Loop -->
-    <section class="singers">
+    <section class="singers bg-gray-light">
         <div class="row">
             <h2 class="header__secondary--line">Meet <?php single_term_title(); ?></h2> 
         </div>
@@ -61,7 +61,7 @@ get_header();
     </section>
 
     <!-- Event Loop -->
-    <section class="callouts">
+    <section class="callouts ">
         <div class="row">
             <h2 class="header__secondary--line">Hear us sing!</h2> 
         </div>
@@ -71,7 +71,7 @@ get_header();
     </section>
 
     <!-- Video Loop -->
-    <section class="videos">
+    <section class="videos bg-gray-light">
         <div class="row">
             <h2 class="header__secondary--line">Newest Videos</h2> 
         </div> 
@@ -82,7 +82,7 @@ get_header();
 
     <!-- Booking -->
 
-    <section class="booking">
+    <section class="booking ">
         <div class="row">
             <h2 class="header__secondary--line">Book <?php single_term_title(); ?>!</h2> 
         </div>

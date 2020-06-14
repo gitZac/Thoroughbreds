@@ -1,5 +1,5 @@
 <?php if (get_post_thumbnail_id($post->ID)) : ?>
-    <section class="hero">
+    <section class="hero margin-none">
         <div class="hero__image" style="background-image:url(<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)) ?>);"></div>
         <div class="hero__shade"></div>
         <div class="hero__content">

@@ -4,12 +4,14 @@
     'orderby' => 'date',
     'order' => 'DESC'
 ); 
-
+$events = new WP_Query($args); 
 ?>
 
-<?php $events = new WP_Query($args); while($events->have_posts()): $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+<?php if($events->have_posts() ) {  //If events has posts?>
 
-<section class="hero hero--full">
+<?php while($events->have_posts()): $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+
+<section class="hero hero--full margin-none">
     <div class="hero__image" style="background-image:url(<?php echo $thumbnail['0']; ?>);"></div>
     <div class="hero__shade"></div>
     <div class="hero__content">
@@ -32,3 +34,10 @@
 </section>
 
 <?php endwhile; wp_reset_postdata(); ?>
+
+<?php } else {
+
+get_template_part('template-parts/content-none_events');
+
+
+} ?>

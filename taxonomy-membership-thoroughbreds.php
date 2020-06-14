@@ -44,7 +44,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="singers">
+    <section class="singers bg-gray-light">
         <?php get_template_part( 'template-parts/loop/loop-singers' ); ?>
     </section>
 <!-- Event Loop -->
@@ -58,7 +58,7 @@ get_header(); ?>
     </section>
 
     <!-- Video Loop -->
-    <section class="videos">
+    <section class="videos bg-gray-light">
         <div class="row">
             <h2 class="header__secondary--line">Newest Videos</h2> 
         </div> 
