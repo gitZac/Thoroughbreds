@@ -4,10 +4,13 @@
     'orderby' => 'date',
     'offset' => 1,
     'order' => 'DESC'
-); ?>
+); 
+$events = new WP_Query($args);
+?>
+
 <div class="callouts">
     <div class="row">
-        <?php $events = new WP_Query($args); while($events->have_posts()): $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+        <?php while($events->have_posts()): $events->the_post(); $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
         <div class="col-sm-12 col-lg-6">
             <div class="callouts--card">
                 <div class="callouts--card--image" style="background-image:url(<?php echo $thumbnail['0']; ?>);">
@@ -17,7 +20,11 @@
                     <div class="callouts--card--dates"><?php the_field('event_date'); ?></div>
                     <p class="callouts--card--description"><?php the_field('event_description'); ?></p>
                     <div class="callouts--card--link">
-                        <a href="<?php the_permalink(); ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
+                        <?php if( get_field('tickets_link') ): ?>
+                            <a target="_blank" href="<?php echo get_field('tickets_link') ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
+                        <?php endif; ?>
+                    
+                        <a href="<?php the_permalink(); ?>" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">More Info</a>
                     </div>
                 </div>
             </div>

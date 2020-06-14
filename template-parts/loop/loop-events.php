@@ -19,7 +19,11 @@
                 <div class="callouts--card--dates"><?php the_field('event_date'); ?></div>
                 <p class="callouts--card--description"><?php the_field('event_description'); ?></p>
                 <div class="callouts--card--link">
-                    <a href="<?php the_permalink(); ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
+                    <?php if( get_field('tickets_link') ): ?>
+                        <a target="_blank" href="<?php echo get_field('tickets_link') ?>" class="thoroughbreds-button primary small animated flipInX slide2_button1 delay3">Get tickets!</a>
+                    <?php endif; ?>
+
+                    <a href="<?php the_permalink(); ?>" class="thoroughbreds-button secondary small animated flipInX slide2_button1 delay3">Learn More</a>
                 </div>
             </div>
         </div>
