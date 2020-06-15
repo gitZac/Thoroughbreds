@@ -42,7 +42,7 @@
 
 #thoroughbreds-header.frontpage.sticky .header-inner {
     height: 80px;
-    background: #1b1b1b;
+    background: #000;
 }
 
 #thoroughbreds-header.frontpage.sticky .header-inner #thoroughbreds-logo img {
@@ -66,4 +66,12 @@ ul.thoroughbreds-nav > li.menu-item.menu-item-has-children > a:after {
     font-size: .8em;
     margin: 0 0 0 .4em;
     color: $color-primary;
+}
+
+.main-navigation ul ul{
+    box-shadow: none;
+}
+
+ul.thoroughbreds-nav ul {
+    padding:15px 0 0 0;
 }
