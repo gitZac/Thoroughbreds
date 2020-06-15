@@ -5,6 +5,12 @@
             font-size: 4rem;
         }
 
+        &--title-nb{
+            font-size: 4.5rem;
+            margin: 0;
+            // padding: 0 15px;
+        }
+
         &--title::before{
             content: "";
             width: 45px;
@@ -18,4 +24,9 @@
 
 section{
     margin-bottom:5rem;
+}
+
+.entry-content{
+    margin:0;
+    padding:0;
 }
