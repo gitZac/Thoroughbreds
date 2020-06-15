@@ -24,7 +24,7 @@
 ) ); 
 ?>
 
-<?php if($videos->have_posts() ) : ?>
+<?php if($videos->have_posts() ) { ?>
     <?php while($videos->have_posts() ) : $videos->the_post(); ?>
 
     <div class="col-sm-6 padding-none">
@@ -38,5 +38,9 @@
             </div> <!-- /.card--content -->
         </div> <!-- /.highlights--list-item-->
     </div> <!-- /.col-sm-->
-<?php endwhile; 
-   endif; wp_reset_postdata(); ?>
+<?php endwhile; wp_reset_postdata(); 
+   } else{ 
+
+    get_template_part('template-parts/content-none_videos');
+
+   } ?>
