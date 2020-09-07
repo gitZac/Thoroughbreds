@@ -50,6 +50,26 @@
         ?>
     </div><!-- .entry-content -->
 
+    <?php 
+    $subpages = new WP_Query(array(
+        'post_type' => 'page',
+        'post_parent' => $post->ID,
+        'posts_per_page' => -1,
+        'orderby' => 'menu_order'
+    ));?>
+
+    <?php if($subpages->have_posts() ) : ?>
+        <section class="child-list">
+            <h3>Read More</h3>
+            <ul>
+                <?php while( $subpages->have_posts() ) : $subpages->the_post(); ?>
+                    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <?php endwhile; wp_reset_postdata(); ?>
+            </ul> 
+        </section>
+    <?php endif; ?>
+
     </article><!-- #post-## -->
 
 </div>
+

@@ -42,7 +42,7 @@
 
             <header id="masthead" class="site-header" role="banner">
 
-                <div id="thoroughbreds-header" class="<?php echo is_front_page() ? 'frontpage' : ''; ?>">
+                <div id="thoroughbreds-header" class="frontpage<?php //echo is_front_page() ? 'frontpage' : ''; ?>">
 
                     <div class="header-inner">
 
